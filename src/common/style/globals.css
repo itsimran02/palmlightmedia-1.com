@@ -5,25 +5,21 @@
 @tailwind utilities;
 
 /* =========================================================
-   LENIS SMOOTH SCROLLING BASE STYLES
+   LENIS SMOOTH SCROLLING
 ========================================================= */
 html.lenis,
 html.lenis body {
   height: auto;
 }
-
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
-
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
-
 .lenis.lenis-stopped {
   overflow: hidden;
 }
-
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
@@ -44,29 +40,150 @@ body {
 }
 
 /* =========================================================
-   HARDWARE ACCELERATION & FPS LAG FIXES
+   FIX 1 — SECTION RENDER CONTAINMENT
+   Prevents off-screen sections from triggering repaints.
 ========================================================= */
+section,
+.plm3-hero,
+.plm-services,
+.plm-about,
+.plm-why,
+.plm-testimonials,
+.plm-video-section,
+.plm-work,
+.plm-pricing,
+.plm-faq,
+.plm-final-cta,
+.plm-contact,
+.plm-footer {
+  contain: layout paint style;
+}
 
-/* Promote animated layers to dedicated GPU render compositing layers */
-.plm3-particle,
+/* =========================================================
+   FIX 2 — KILL ALL BACKGROUND GLOW / ORB / PARTICLE ANIMATIONS
+   These are pure decoration with filter:blur(100-140px)
+   running forever — they destroy GPU fill-rate on scroll.
+========================================================= */
 .plm3-glow,
-.plm3-marquee,
-.plm3-marquee-group,
-.plm-testimonials-track,
+.plm3-glow-1,
+.plm3-glow-2,
+.plm3-particle,
+.plm3-noise,
+.plm-about-glow,
+.plm-about-glow-1,
+.plm-about-glow-2,
+.plm-why-glow,
+.plm-why-glow-1,
+.plm-why-glow-2,
+.plm-pricing-glow,
+.plm-pricing-glow2,
+.plm-pricing-glow3,
+.plm-price-corner,
+.plm-faq-orb,
+.plm-faq-grid,
+.plm-cta-orb,
+.plm-cta-orb-1,
+.plm-cta-orb-2,
+.plm-cta-grid,
+.plm-footer-orb,
+.plm-contact-orb,
+.plm-contact-orb-1,
+.plm-contact-orb-2,
+.plm-work-grid,
+.plm-services-transition,
+.plm3-ring,
+.plm3-core-inner {
+  animation: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  will-change: auto !important;
+  transition: none !important;
+}
+
+/* =========================================================
+   FIX 3 — REPLACE HEAVY BLURS WITH STATIC GPU GRADIENTS
+   Static radial-gradients cost zero GPU fill-rate.
+========================================================= */
+.plm3-glow-1,
+.plm-about-glow-1,
+.plm-why-glow-1 {
+  background: radial-gradient(circle at center, rgba(120, 25, 255, 0.18) 0%, transparent 70%) !important;
+}
+.plm3-glow-2,
+.plm-about-glow-2,
+.plm-why-glow-2 {
+  background: radial-gradient(circle at center, rgba(99, 50, 200, 0.12) 0%, transparent 70%) !important;
+}
+.plm-pricing-glow,
+.plm-pricing-glow2,
+.plm-pricing-glow3,
+.plm-faq-orb,
+.plm-cta-orb,
+.plm-cta-orb-1,
+.plm-cta-orb-2,
+.plm-footer-orb,
+.plm-contact-orb,
+.plm-contact-orb-1,
+.plm-contact-orb-2 {
+  background: radial-gradient(circle at center, rgba(139, 61, 255, 0.14) 0%, transparent 70%) !important;
+}
+
+/* =========================================================
+   FIX 4 — REDUCE BACKDROP FILTER BLUR COSTS
+========================================================= */
+.plm-nav-inner,
+.plm-mobile-panel,
 .plm-service-card,
-.plm-service-icon,
-.plm-about-visual,
-.plm-about-image,
-.plm-why-card,
 .plm-pricing-card,
-.plm-work-card,
-.plm-sticky-whatsapp {
+.plm-faq-question {
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* =========================================================
+   FIX 5 — GPU LAYER PROMOTION (essential animated elements only)
+========================================================= */
+.plm3-marquee-group,
+.plm-testimonials-track {
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
-/* Preserve Navbar Fixed Centering & High Z-Index */
+/* =========================================================
+   FIX 6 — PURE CSS HOVER LIFTS (replaces JS mousemove tilt)
+========================================================= */
+.plm-service-card,
+.plm-why-card,
+.plm-work-card,
+.plm-project,
+.plm-testimonial-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.plm-service-card:hover {
+  transform: translateY(-6px) translateZ(0) !important;
+  border-color: rgba(139, 61, 255, 0.4) !important;
+  box-shadow: 0 16px 36px -10px rgba(139, 61, 255, 0.25) !important;
+}
+.plm-why-card:hover,
+.plm-work-card:hover,
+.plm-project:hover {
+  transform: translateY(-5px) translateZ(0) !important;
+  border-color: rgba(139, 61, 255, 0.35) !important;
+  box-shadow: 0 12px 30px -8px rgba(139, 61, 255, 0.2) !important;
+}
+.plm-testimonial-card:hover {
+  transform: translateY(-4px) translateZ(0) scale(1.01) !important;
+}
+
+/* =========================================================
+   FIX 7 — NAVBAR FIXED CENTERING
+========================================================= */
 .plm-nav {
   position: fixed !important;
   top: 18px !important;
@@ -77,33 +194,24 @@ body {
   z-index: 999999 !important;
 }
 
-/* Optimize heavy backdrop filters for high refresh rate rendering */
-.plm-nav-inner,
-.plm-mobile-panel,
-.plm-service-card,
-.plm-pricing-card,
-.plm-faq-question {
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  backdrop-filter: blur(12px) saturate(140%);
-}
-
-/* Reduce blur cost on mobile devices to maintain 60 FPS */
+/* =========================================================
+   MOBILE: KILL ALL REMAINING ANIMATIONS
+========================================================= */
 @media (max-width: 768px) {
   .plm-nav {
     top: 12px !important;
     width: calc(100% - 24px) !important;
   }
 
-  .plm-nav-inner,
-  .plm-mobile-panel,
-  .plm-service-card,
-  .plm-pricing-card {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-  }
-
-  .plm3-particle,
-  .plm3-glow {
-    animation-duration: 20s !important;
+  /* Kill everything that animates on mobile */
+  *[class*="plm3-"],
+  *[class*="plm-about-glow"],
+  *[class*="plm-why-glow"],
+  *[class*="plm-pricing-glow"],
+  *[class*="plm-cta-orb"],
+  *[class*="plm-contact-orb"],
+  *[class*="plm-footer-orb"] {
+    animation: none !important;
+    filter: none !important;
   }
 }
