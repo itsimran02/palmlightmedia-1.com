@@ -4812,13 +4812,16 @@ export default function PalmLightMediaLanding() {
 
                     <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 4} onClick={() => toggleFaq(4)}>
 
-                        <span className="plm-faq-index">
-                            05
-                        </span>
+                        <span className="plm-faq-question-left">
 
+                            <span className="plm-faq-index">
+                                05
+                            </span>
 
-                        <span className="plm-faq-question-text">
-                            How much does a website cost?
+                            <span className="plm-faq-question-text">
+                                How much does a website cost?
+                            </span>
+
                         </span>
 
 

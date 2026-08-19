@@ -420,3 +420,95 @@ li {
     transform: translate3d(-50%, 0, 0);
   }
 }
+
+/* =========================================================
+   HERO PROOF / STATS FONT & SIZE OVERHAUL
+========================================================= */
+.plm3-proof {
+  display: flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  margin-top: 48px !important;
+  flex-wrap: wrap !important;
+}
+
+.plm3-proof-number {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.plm3-proof-number strong {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  font-family: 'Poppins', 'Roboto', system-ui, sans-serif !important;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.4) !important;
+}
+
+.plm3-proof-number span {
+  font-size: 16px !important;
+  color: #cbd5e1 !important;
+  line-height: 1.35 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  font-family: 'Poppins', 'Roboto', system-ui, sans-serif !important;
+}
+
+.plm3-proof-line {
+  width: 1px !important;
+  height: 44px !important;
+  background: rgba(168, 85, 247, 0.35) !important;
+}
+
+/* =========================================================
+   TESTIMONIAL TRUST STATS (35+ HAPPY CLIENTS, etc.)
+========================================================= */
+.plm-testimonial-trust {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+  margin-top: 50px !important;
+}
+
+.plm-trust-item {
+  text-align: center !important;
+  padding: 0 15px !important;
+}
+
+.plm-trust-item strong {
+  display: block !important;
+  font-size: 38px !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  font-family: 'Poppins', 'Roboto', system-ui, sans-serif !important;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.4) !important;
+}
+
+.plm-trust-item strong span {
+  color: #a855f7 !important;
+  font-size: 38px !important;
+}
+
+.plm-trust-item small {
+  display: block !important;
+  margin-top: 10px !important;
+  font-size: 16px !important;
+  color: #cbd5e1 !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  font-family: 'Poppins', 'Roboto', system-ui, sans-serif !important;
+}
+
+.plm-trust-line {
+  width: 1px !important;
+  height: 48px !important;
+  background: rgba(168, 85, 247, 0.35) !important;
+}
+
