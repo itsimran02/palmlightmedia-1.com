@@ -728,9 +728,13 @@ export default function PalmLightMediaLanding() {
 
         {/* LOGO */}
 
-        <a href="#home" className="plm-nav-logo" aria-label="Palm Light Media">
+        <a href="#home" className="plm-nav-logo" aria-label="Palm Light Media" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
             <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
+
+            <span style={{ color: '#ffffff', fontSize: '19px', fontWeight: '900', letterSpacing: '-0.5px' }}>
+                Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+            </span>
 
         </a>
 
@@ -839,9 +843,13 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-mobile-header">
 
-            <a href="#home" className="plm-mobile-logo">
+            <a href="#home" className="plm-mobile-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
 
                 <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
+
+                <span style={{ color: '#ffffff', fontSize: '18px', fontWeight: '900', letterSpacing: '-0.5px' }}>
+                    Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+                </span>
 
             </a>
 
@@ -5654,9 +5662,13 @@ export default function PalmLightMediaLanding() {
             <div className="plm-footer-brand">
 
 
-                <a href="#" className="plm-footer-logo">
+                <a href="#home" className="plm-footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
                     <img src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
+
+                    <span className="plm-footer-logo-text" style={{ color: '#ffffff', fontSize: '22px', fontWeight: '900', letterSpacing: '-0.7px' }}>
+                        Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+                    </span>
 
                 </a>
 
