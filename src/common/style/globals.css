@@ -52,11 +52,15 @@ section,
 .plm-video-section,
 .plm-work,
 .plm-pricing,
-.plm-faq,
 .plm-final-cta,
 .plm-contact,
 .plm-footer {
   contain: layout paint style;
+}
+
+/* FAQ needs layout freedom for accordion grid-template-rows animation */
+.plm-faq {
+  contain: paint style;
 }
 
 /* =========================================================
@@ -214,4 +218,57 @@ section,
     animation: none !important;
     filter: none !important;
   }
+}
+
+/* =========================================================
+   GLOBAL MINIMUM FONT SIZE — NO font below 16px
+========================================================= */
+
+/* Global paragraph baseline — strict 16px floor */
+p,
+li {
+  font-size: max(16px, 1em) !important;
+}
+
+/* Footer-specific overrides — all ≥ 16px */
+.plm-footer-description {
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+}
+
+.plm-footer-location {
+  font-size: 16px !important;
+}
+
+.plm-footer-links a {
+  font-size: 16px !important;
+}
+
+.plm-footer-column h3 {
+  font-size: 16px !important;
+}
+
+.plm-footer-mini-cta-text p {
+  font-size: 16px !important;
+}
+
+.plm-footer-mini-btn {
+  font-size: 16px !important;
+}
+
+.plm-footer-copyright {
+  font-size: 16px !important;
+}
+
+.plm-footer-bottom-links a {
+  font-size: 16px !important;
+}
+
+.plm-faq-header-note {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+.plm-faq-header-note strong {
+  font-size: 16px !important;
 }

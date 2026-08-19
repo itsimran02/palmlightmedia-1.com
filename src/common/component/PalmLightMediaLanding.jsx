@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function PalmLightMediaLanding() {
+  const [activeFaq, setActiveFaq] = useState(0);
+
+  const toggleFaq = (index) => {
+    setActiveFaq(prev => prev === index ? -1 : index);
+  };
   useEffect(() => {
     let lenis;
     let rafHandler;
@@ -695,74 +700,7 @@ export default function PalmLightMediaLanding() {
 
 
 
-/* =========================================================
-   FAQ ACCORDION
-========================================================= */
-
-(function(){
-
-    const faqItems =
-        document.querySelectorAll(
-            '.plm-faq-item'
-        );
-
-
-    faqItems.forEach(function(item){
-
-        const button =
-            item.querySelector(
-                '.plm-faq-question'
-            );
-
-
-        button.addEventListener(
-            'click',
-            function(){
-
-                const currentlyOpen =
-                    item.classList.contains(
-                        'active'
-                    );
-
-
-                faqItems.forEach(function(other){
-
-                    other.classList.remove(
-                        'active'
-                    );
-
-                    const otherButton =
-                        other.querySelector(
-                            '.plm-faq-question'
-                        );
-
-                    otherButton.setAttribute(
-                        'aria-expanded',
-                        'false'
-                    );
-
-                });
-
-
-                if(!currentlyOpen){
-
-                    item.classList.add(
-                        'active'
-                    );
-
-                    button.setAttribute(
-                        'aria-expanded',
-                        'true'
-                    );
-
-                }
-
-            }
-        );
-
-    });
-
-})();
+/* FAQ accordion is now React-controlled via activeFaq state */
 
 
     } catch (e) {
@@ -4661,10 +4599,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 01 */}
 
-                <div className="plm-faq-item active">
+                <div className={`plm-faq-item${activeFaq === 0 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="true">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 0} onClick={() => toggleFaq(0)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4711,10 +4649,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 02 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 1 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 1} onClick={() => toggleFaq(1)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4759,10 +4697,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 03 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 2 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 2} onClick={() => toggleFaq(2)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4807,10 +4745,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 04 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 3 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 3} onClick={() => toggleFaq(3)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4855,10 +4793,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 05 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 4 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 4} onClick={() => toggleFaq(4)}>
 
                         <span className="plm-faq-index">
                             05
@@ -4900,10 +4838,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 06 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 5 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 5} onClick={() => toggleFaq(5)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4949,10 +4887,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 07 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 6 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 6} onClick={() => toggleFaq(6)}>
 
                         <span className="plm-faq-question-left">
 
@@ -4996,10 +4934,10 @@ export default function PalmLightMediaLanding() {
 
                 {/* FAQ 08 */}
 
-                <div className="plm-faq-item">
+                <div className={`plm-faq-item${activeFaq === 7 ? ' active' : ''}`}>
 
 
-                    <button className="plm-faq-question" type="button" aria-expanded="false">
+                    <button className="plm-faq-question" type="button" aria-expanded={activeFaq === 7} onClick={() => toggleFaq(7)}>
 
                         <span className="plm-faq-question-left">
 
