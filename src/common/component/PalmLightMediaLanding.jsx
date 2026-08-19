@@ -1,11 +1,69 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Lenis from "lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function PalmLightMediaLanding() {
   useEffect(() => {
+    let lenis;
+    let rafHandler;
     try {
-      
+      gsap.registerPlugin(ScrollTrigger);
+
+      lenis = new Lenis({
+        duration: 1.0,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        wheelMultiplier: 1.0,
+        touchMultiplier: 1.5,
+      });
+
+      lenis.on("scroll", () => {
+        ScrollTrigger.update();
+      });
+
+      rafHandler = (time) => {
+        lenis.raf(time * 1000);
+      };
+      gsap.ticker.add(rafHandler);
+      gsap.ticker.lagSmoothing(0);
+
+      // GSAP Section Reveal Animations
+      const sections = document.querySelectorAll("section");
+      sections.forEach((sec) => {
+        gsap.fromTo(
+          sec,
+          { opacity: 0.85, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.9,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: sec,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+
+      // Lenis Smooth Anchor Scrolling
+      const anchorLinks = document.querySelectorAll('a[href^="#"]');
+      anchorLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          if (href && href !== "#") {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              lenis.scrollTo(target, { offset: -80 });
+            }
+          }
+        });
+      });
 
 (function(){
 
@@ -700,66 +758,36 @@ export default function PalmLightMediaLanding() {
   }
 
 
+  let heroTicking = false;
   hero.addEventListener(
     "mousemove",
     function (e) {
+      if (heroTicking) return;
+      heroTicking = true;
+      const clientX = e.clientX;
+      const clientY = e.clientY;
+      requestAnimationFrame(function () {
+        const rect = hero.getBoundingClientRect();
+        const x = (clientX - rect.left) / rect.width;
+        const y = (clientY - rect.top) / rect.height;
+        const rotateY = (x - .5) * 12;
+        const rotateX = (y - .5) * -10;
 
-      const rect =
-        hero.getBoundingClientRect();
-
-
-      const x =
-        (e.clientX - rect.left) /
-        rect.width;
-
-
-      const y =
-        (e.clientY - rect.top) /
-        rect.height;
-
-
-      const rotateY =
-        (x - .5) * 12;
-
-
-      const rotateX =
-        (y - .5) * -10;
-
-
-      visual.style.transform =
-        `
-        rotateX(${rotateX}deg)
-        rotateY(${rotateY}deg)
-        `;
-
-
-      core.style.transform =
-        `
-        translate(-50%,-50%)
-        rotateX(${8 + rotateX / 2}deg)
-        rotateY(${-8 + rotateY / 2}deg)
-        `;
-
-    }
+        visual.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        core.style.transform = `translate(-50%,-50%) rotateX(${8 + rotateX / 2}deg) rotateY(${-8 + rotateY / 2}deg)`;
+        heroTicking = false;
+      });
+    },
+    { passive: true }
   );
-
 
   hero.addEventListener(
     "mouseleave",
     function () {
-
-      visual.style.transform =
-        "rotateX(0deg) rotateY(0deg)";
-
-
-      core.style.transform =
-        `
-        translate(-50%,-50%)
-        rotateX(8deg)
-        rotateY(-8deg)
-        `;
-
-    }
+      visual.style.transform = "rotateX(0deg) rotateY(0deg)";
+      core.style.transform = `translate(-50%,-50%) rotateX(8deg) rotateY(-8deg)`;
+    },
+    { passive: true }
   );
 
 })();
@@ -809,55 +837,35 @@ export default function PalmLightMediaLanding() {
     }
 
 
+    let cardTicking = false;
     card.addEventListener(
       "mousemove",
       function(e) {
+        if (cardTicking) return;
+        cardTicking = true;
+        const clientX = e.clientX;
+        const clientY = e.clientY;
+        requestAnimationFrame(function() {
+          const rect = card.getBoundingClientRect();
+          const x = clientX - rect.left;
+          const y = clientY - rect.top;
+          const rotateY = ((x / rect.width) - .5) * 5;
+          const rotateX = ((y / rect.height) - .5) * -4;
 
-
-        const rect =
-          card.getBoundingClientRect();
-
-
-        const x =
-          e.clientX -
-          rect.left;
-
-
-        const y =
-          e.clientY -
-          rect.top;
-
-
-        const rotateY =
-          ((x / rect.width) - .5) * 5;
-
-
-        const rotateX =
-          ((y / rect.height) - .5) * -4;
-
-
-        icon.style.transform =
-          `
-          perspective(600px)
-          rotateY(${-12 + rotateY}deg)
-          rotateX(${8 + rotateX}deg)
-          translateZ(20px)
-          `;
-
-      }
+          icon.style.transform = `perspective(600px) rotateY(${-12 + rotateY}deg) rotateX(${8 + rotateX}deg) translateZ(20px)`;
+          cardTicking = false;
+        });
+      },
+      { passive: true }
     );
-
 
     card.addEventListener(
       "mouseleave",
       function() {
-
-        icon.style.transform =
-          "";
-
-      }
+        icon.style.transform = "";
+      },
+      { passive: true }
     );
-
 
   });
 
@@ -900,58 +908,35 @@ export default function PalmLightMediaLanding() {
   }
 
 
+  let visTicking = false;
   visual.addEventListener(
     "mousemove",
     function(e) {
+      if (visTicking) return;
+      visTicking = true;
+      const clientX = e.clientX;
+      const clientY = e.clientY;
+      requestAnimationFrame(function() {
+        const rect = visual.getBoundingClientRect();
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
+        const moveX = ((x / rect.width) - .5) * 8;
+        const moveY = ((y / rect.height) - .5) * 6;
 
-      const rect =
-        visual.getBoundingClientRect();
-
-
-      const x =
-        e.clientX -
-        rect.left;
-
-
-      const y =
-        e.clientY -
-        rect.top;
-
-
-      const moveX =
-        ((x / rect.width) - .5) * 8;
-
-
-      const moveY =
-        ((y / rect.height) - .5) * 6;
-
-
-      image.style.transform =
-        `
-        perspective(1000px)
-        rotateY(${moveX * .35}deg)
-        rotateX(${-moveY * .25}deg)
-        scale(1.025)
-        translate(
-          ${moveX * .35}px,
-          ${moveY * .25}px
-        )
-        `;
-
-    }
+        image.style.transform = `perspective(1000px) rotateY(${moveX * .35}deg) rotateX(${-moveY * .25}deg) scale(1.025) translate(${moveX * .35}px, ${moveY * .25}px)`;
+        visTicking = false;
+      });
+    },
+    { passive: true }
   );
-
 
   visual.addEventListener(
     "mouseleave",
     function() {
-
-      image.style.transform =
-        "";
-
-    }
+      image.style.transform = "";
+    },
+    { passive: true }
   );
-
 
 })();
 
@@ -985,55 +970,35 @@ export default function PalmLightMediaLanding() {
   cards.forEach(function(card) {
 
 
+    let whyTicking = false;
     card.addEventListener(
       "mousemove",
       function(e) {
+        if (whyTicking) return;
+        whyTicking = true;
+        const clientX = e.clientX;
+        const clientY = e.clientY;
+        requestAnimationFrame(function() {
+          const rect = card.getBoundingClientRect();
+          const x = clientX - rect.left;
+          const y = clientY - rect.top;
+          const rotateY = ((x / rect.width) - .5) * 4;
+          const rotateX = ((y / rect.height) - .5) * -4;
 
-
-        const rect =
-          card.getBoundingClientRect();
-
-
-        const x =
-          e.clientX -
-          rect.left;
-
-
-        const y =
-          e.clientY -
-          rect.top;
-
-
-        const rotateY =
-          ((x / rect.width) - .5) * 4;
-
-
-        const rotateX =
-          ((y / rect.height) - .5) * -4;
-
-
-        card.style.transform =
-          `
-          perspective(1000px)
-          translateY(-8px)
-          rotateX(${rotateX}deg)
-          rotateY(${rotateY}deg)
-          `;
-
-      }
+          card.style.transform = `perspective(1000px) translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+          whyTicking = false;
+        });
+      },
+      { passive: true }
     );
-
 
     card.addEventListener(
       "mouseleave",
       function() {
-
-        card.style.transform =
-          "";
-
-      }
+        card.style.transform = "";
+      },
+      { passive: true }
     );
-
 
   });
 
@@ -1055,76 +1020,38 @@ export default function PalmLightMediaLanding() {
    * The marquee itself remains CSS-driven.
    */
 
-  if (window.innerWidth <= 900) {
-    return;
-  }
-
-
-  const cards =
-    document.querySelectorAll(
-      ".plm-testimonial-card"
-    );
-
-
+  const cards = document.querySelectorAll(".plm-testimonial-card");
   cards.forEach(function(card) {
-
-
+    let testTicking = false;
     card.addEventListener(
       "mousemove",
       function(e) {
+        if (testTicking) return;
+        testTicking = true;
+        const clientX = e.clientX;
+        const clientY = e.clientY;
+        requestAnimationFrame(function() {
+          const rect = card.getBoundingClientRect();
+          const x = clientX - rect.left;
+          const y = clientY - rect.top;
+          const rotateY = ((x / rect.width) - .5) * 4;
+          const rotateX = ((y / rect.height) - .5) * -4;
 
-
-        const rect =
-          card.getBoundingClientRect();
-
-
-        const x =
-          e.clientX -
-          rect.left;
-
-
-        const y =
-          e.clientY -
-          rect.top;
-
-
-        const rotateY =
-          ((x / rect.width) - .5) * 4;
-
-
-        const rotateX =
-          ((y / rect.height) - .5) * -4;
-
-
-        card.style.transform =
-          `
-          perspective(1100px)
-          translateY(-9px)
-          rotateX(${rotateX}deg)
-          rotateY(${rotateY}deg)
-          scale(1.015)
-          `;
-
-
-      }
+          card.style.transform = `perspective(1100px) translateY(-9px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.015)`;
+          testTicking = false;
+        });
+      },
+      { passive: true }
     );
-
 
     card.addEventListener(
       "mouseleave",
       function() {
-
-
-        card.style.transform =
-          "";
-
-
-      }
+        card.style.transform = "";
+      },
+      { passive: true }
     );
-
-
   });
-
 
 })();
 
@@ -1149,53 +1076,35 @@ export default function PalmLightMediaLanding() {
 
 
     cards.forEach(function(card){
-
+        let projTicking = false;
         card.addEventListener(
             "mousemove",
             function(e){
+                if(projTicking) return;
+                projTicking = true;
+                const clientX = e.clientX;
+                const clientY = e.clientY;
+                requestAnimationFrame(function(){
+                    const rect = card.getBoundingClientRect();
+                    const x = clientX - rect.left;
+                    const y = clientY - rect.top;
+                    const rotateY = ((x / rect.width) - .5) * 5;
+                    const rotateX = ((y / rect.height) - .5) * -5;
 
-                const rect =
-                    card.getBoundingClientRect();
-
-
-                const x =
-                    e.clientX -
-                    rect.left;
-
-
-                const y =
-                    e.clientY -
-                    rect.top;
-
-
-                const rotateY =
-                    ((x / rect.width) - .5) * 5;
-
-
-                const rotateX =
-                    ((y / rect.height) - .5) * -5;
-
-
-                card.style.transform = `
-                    perspective(1200px)
-                    translateY(-8px)
-                    rotateX(${rotateX}deg)
-                    rotateY(${rotateY}deg)
-                `;
-
-            }
+                    card.style.transform = `perspective(1200px) translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                    projTicking = false;
+                });
+            },
+            { passive: true }
         );
-
 
         card.addEventListener(
             "mouseleave",
             function(){
-
                 card.style.transform = "";
-
-            }
+            },
+            { passive: true }
         );
-
     });
 
 })();
@@ -1218,43 +1127,33 @@ export default function PalmLightMediaLanding() {
 
 
     buttons.forEach(function(button){
-
+        let btnTicking = false;
         button.addEventListener(
             "mousemove",
             function(e){
+                if(btnTicking) return;
+                btnTicking = true;
+                const clientX = e.clientX;
+                const clientY = e.clientY;
+                requestAnimationFrame(function(){
+                    const rect = button.getBoundingClientRect();
+                    const x = clientX - rect.left - rect.width / 2;
+                    const y = clientY - rect.top - rect.height / 2;
 
-                const rect =
-                    button.getBoundingClientRect();
-
-
-                const x =
-                    e.clientX -
-                    rect.left -
-                    rect.width / 2;
-
-
-                const y =
-                    e.clientY -
-                    rect.top -
-                    rect.height / 2;
-
-
-                button.style.transform =
-                    `translate(${x * .12}px,${y * .12}px)`;
-
-            }
+                    button.style.transform = `translate(${x * .12}px,${y * .12}px)`;
+                    btnTicking = false;
+                });
+            },
+            { passive: true }
         );
-
 
         button.addEventListener(
             "mouseleave",
             function(){
-
                 button.style.transform = "";
-
-            }
+            },
+            { passive: true }
         );
-
     });
 
 })();
@@ -1336,6 +1235,12 @@ export default function PalmLightMediaLanding() {
     } catch (e) {
       console.error("Effect error:", e);
     }
+
+    return () => {
+      if (rafHandler) gsap.ticker.remove(rafHandler);
+      if (lenis) lenis.destroy();
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
   }, []);
 
   return (
@@ -1349,7 +1254,7 @@ export default function PalmLightMediaLanding() {
 
         <a href="#home" className="plm-nav-logo" aria-label="Palm Light Media">
 
-            <img decoding="async" src="wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
+            <img decoding="async" src="/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
 
         </a>
 
@@ -1460,7 +1365,7 @@ export default function PalmLightMediaLanding() {
 
             <a href="#home" className="plm-mobile-logo">
 
-                <img decoding="async" src="wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
+                <img decoding="async" src="/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
 
             </a>
 
@@ -3878,7 +3783,7 @@ export default function PalmLightMediaLanding() {
                 autoplay;
                 encrypted-media;
                 picture-in-picture;
-            " allowfullscreen=""></iframe>
+            " allowFullScreen></iframe>
 
     </div>
 

@@ -1021,7 +1021,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 ========================================================= */
 
 html{
-    scroll-behavior:smooth;
+    scroll-behavior: auto !important;
 }
 
 
@@ -11872,7 +11872,7 @@ html{
 }
 
 html{
-    scroll-behavior:smooth;
+    scroll-behavior: auto !important;
 }
 
 body{

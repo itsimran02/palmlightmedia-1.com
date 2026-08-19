@@ -4,8 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================
+   LENIS SMOOTH SCROLLING BASE STYLES
+========================================================= */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 html {
-  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -14,4 +40,70 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   HARDWARE ACCELERATION & FPS LAG FIXES
+========================================================= */
+
+/* Promote animated layers to dedicated GPU render compositing layers */
+.plm3-particle,
+.plm3-glow,
+.plm3-marquee,
+.plm3-marquee-group,
+.plm-testimonials-track,
+.plm-service-card,
+.plm-service-icon,
+.plm-about-visual,
+.plm-about-image,
+.plm-why-card,
+.plm-pricing-card,
+.plm-work-card,
+.plm-sticky-whatsapp {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Preserve Navbar Fixed Centering & High Z-Index */
+.plm-nav {
+  position: fixed !important;
+  top: 18px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(1375px, calc(100% - 50px)) !important;
+  height: 72px !important;
+  z-index: 999999 !important;
+}
+
+/* Optimize heavy backdrop filters for high refresh rate rendering */
+.plm-nav-inner,
+.plm-mobile-panel,
+.plm-service-card,
+.plm-pricing-card,
+.plm-faq-question {
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+}
+
+/* Reduce blur cost on mobile devices to maintain 60 FPS */
+@media (max-width: 768px) {
+  .plm-nav {
+    top: 12px !important;
+    width: calc(100% - 24px) !important;
+  }
+
+  .plm-nav-inner,
+  .plm-mobile-panel,
+  .plm-service-card,
+  .plm-pricing-card {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  .plm3-particle,
+  .plm3-glow {
+    animation-duration: 20s !important;
+  }
 }
