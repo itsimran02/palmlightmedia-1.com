@@ -39,11 +39,16 @@ export default function PalmLightMediaLanding() {
         link.addEventListener("click", (e) => {
           const href = link.getAttribute("href");
           if (href && href !== "#") {
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              lenis.scrollTo(target, { offset: -80 });
-            }
+            try {
+              const target = document.querySelector(href);
+              if (target) {
+                e.preventDefault();
+                lenis.scrollTo(target, { offset: -80 });
+              }
+            } catch (err) {}
+          } else if (href === "#") {
+            e.preventDefault();
+            lenis.scrollTo(0);
           }
         });
       });
@@ -725,7 +730,7 @@ export default function PalmLightMediaLanding() {
 
         <a href="#home" className="plm-nav-logo" aria-label="Palm Light Media">
 
-            <img decoding="async" src="/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
+            <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
 
         </a>
 
@@ -836,7 +841,7 @@ export default function PalmLightMediaLanding() {
 
             <a href="#home" className="plm-mobile-logo">
 
-                <img decoding="async" src="/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png" alt="Palm Light Media" />
+                <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
 
             </a>
 
@@ -1027,7 +1032,7 @@ export default function PalmLightMediaLanding() {
      PALM LIGHT MEDIA — MODERN 3D HERO
 ========================================================= */}
 
-<section className="plm3-hero">
+<section className="plm3-hero" id="home">
 
   {/* BACKGROUND */}
   <div className="plm3-grid"></div>
@@ -1438,7 +1443,8 @@ export default function PalmLightMediaLanding() {
      RESPONSIVE / PREMIUM VERSION
 ========================================================= */}
 
-<section className="plm-services" id="services">
+<section className="plm-services" id="what-we-do">
+  <div id="services"></div>
 
   {/* BACKGROUND */}
   <div className="plm-services-transition"></div>
@@ -5401,7 +5407,7 @@ export default function PalmLightMediaLanding() {
             </div>
 
 
-            <form className="plm-contact-form" action="#" method="post">
+            <form className="plm-contact-form" id="contact-form" action="#" method="post">
 
 
                 <div className="plm-form-grid">
@@ -5650,15 +5656,7 @@ export default function PalmLightMediaLanding() {
 
                 <a href="#" className="plm-footer-logo">
 
-                    <div className="plm-footer-logo-mark">
-                    </div>
-
-                    <div className="plm-footer-logo-text">
-
-                        Palm Light
-                        <span>Media</span>
-
-                    </div>
+                    <img src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
 
                 </a>
 
