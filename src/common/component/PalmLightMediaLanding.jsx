@@ -797,7 +797,7 @@ export default function PalmLightMediaLanding() {
              DESKTOP CTA
         ================================================== */}
 
-        <a href="https://wa.me/96875186675" target="_blank" rel="noopener noreferrer" className="plm-nav-cta">
+        <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-nav-cta">
 
             Start Your Project
 
@@ -1012,7 +1012,7 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="https://wa.me/96875186675" target="_blank" rel="noopener noreferrer" className="plm-mobile-cta">
+            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-mobile-cta">
 
                 Start Your Project
 
@@ -1103,7 +1103,7 @@ export default function PalmLightMediaLanding() {
 
       <div className="plm3-actions">
 
-        <a href="https://wa.me/96875186675" className="plm3-primary">
+        <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm3-primary">
 
           <span>
             Start Your Project
@@ -3339,7 +3339,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-video-buttons">
 
 
-            <a href="#contact" className="plm-video-btn plm-video-btn-primary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-video-btn plm-video-btn-primary">
 
                 Start Your Project
 
@@ -5103,7 +5103,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-cta-buttons">
 
 
-            <a href="#contact-form" className="plm-cta-btn plm-cta-primary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-primary">
 
                 Start Your Project
 
@@ -5112,7 +5112,7 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="https://wa.me/" className="plm-cta-btn plm-cta-secondary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-secondary">
 
                 Talk to Us
 
@@ -5864,7 +5864,7 @@ export default function PalmLightMediaLanding() {
             </div>
 
 
-            <a href="#contact-us" className="plm-footer-mini-btn">
+            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-footer-mini-btn">
 
                 Start Your Project
 
