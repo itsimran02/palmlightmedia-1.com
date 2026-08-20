@@ -1544,7 +1544,7 @@ export default function PalmLightMediaLanding() {
           </p>
 
 
-          <a href="https://wa.me/96875186675" className="plm-srv-link">
+          <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-srv-link">
 
             <span className="plm-link-text">
               Let's build something
@@ -1631,9 +1631,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Web%20Design%20services." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Web Design on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1692,9 +1692,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Social%20Media%20Marketing." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Social Media Marketing on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1747,9 +1747,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Graphic%20Design." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Graphic Design on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1804,9 +1804,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Videography%20%26%20Video%20Production." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Video Production on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1869,9 +1869,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20App%20Development." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss App Development on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1927,9 +1927,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Industrial%20Software%20Development." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Industrial Software on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -1982,9 +1982,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Search%20SEO%20services." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss SEO on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
@@ -2037,9 +2037,9 @@ export default function PalmLightMediaLanding() {
         </div>
 
 
-        <div className="plm-service-arrow">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27m%20interested%20in%20Paid%20Ads%20campaigns." target="_blank" rel="noopener noreferrer" className="plm-service-arrow" aria-label="Discuss Paid Ads on WhatsApp" style={{ textDecoration: 'none', cursor: 'pointer' }}>
           ↗
-        </div>
+        </a>
 
       </article>
 
