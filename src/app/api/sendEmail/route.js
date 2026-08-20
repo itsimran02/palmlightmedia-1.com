@@ -38,7 +38,7 @@ export async function POST(request) {
         });
 
         await transporter.sendMail({
-          from: `"Palm Light Media Leads" <${process.env.SMTP_USER}>`,
+          from: `"Palmlight Media Leads" <${process.env.SMTP_USER}>`,
           to: recipientEmail,
           replyTo: email,
           subject: `🚀 New Lead from ${name || email}: ${service || 'General Inquiry'}`,
@@ -74,7 +74,7 @@ export async function POST(request) {
             Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
           },
           body: JSON.stringify({
-            from: "Palm Light Media Leads <onboarding@resend.dev>",
+            from: "Palmlight Media Leads <onboarding@resend.dev>",
             to: [recipientEmail],
             reply_to: email,
             subject: `🚀 New Lead from ${name || email}: ${service || 'General Inquiry'}`,

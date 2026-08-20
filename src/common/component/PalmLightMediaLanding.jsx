@@ -310,7 +310,7 @@ export default function PalmLightMediaLanding() {
             if(!target){
 
                 console.warn(
-                    "Palm Light Media: #" +
+                    "Palmlight Media: #" +
                     id +
                     " was not found."
                 );
@@ -728,12 +728,12 @@ export default function PalmLightMediaLanding() {
 
         {/* LOGO */}
 
-        <a href="#home" className="plm-nav-logo" aria-label="Palm Light Media" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+        <a href="#home" className="plm-nav-logo" aria-label="Palmlight Media" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
-            <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
+            <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
 
             <span style={{ color: '#ffffff', fontSize: '19px', fontWeight: '900', letterSpacing: '-0.5px' }}>
-                Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+                Palmlight <span style={{ color: '#a855f7' }}>Media</span>
             </span>
 
         </a>
@@ -845,10 +845,10 @@ export default function PalmLightMediaLanding() {
 
             <a href="#home" className="plm-mobile-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
 
-                <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
+                <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
 
                 <span style={{ color: '#ffffff', fontSize: '18px', fontWeight: '900', letterSpacing: '-0.5px' }}>
-                    Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+                    Palmlight <span style={{ color: '#a855f7' }}>Media</span>
                 </span>
 
             </a>
@@ -1025,7 +1025,7 @@ export default function PalmLightMediaLanding() {
 
                 Muscat · Oman
                 &nbsp;•&nbsp;
-                <strong>Palm Light Media</strong>
+                <strong>Palmlight Media</strong>
 
             </div>
 
@@ -2038,7 +2038,7 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-about-image-glow"></div>
 
-        <img decoding="async" className="plm-about-image" src="wp-content/uploads/2026/08/WhatsApp-Image-2026-08-15-at-6.55.21-PM.jpeg" alt="Shahnwaz Khan - Founder of Palm Light Media" />
+        <img decoding="async" className="plm-about-image" src="wp-content/uploads/2026/08/WhatsApp-Image-2026-08-15-at-6.55.21-PM.jpeg" alt="Shahnwaz Khan - Founder of Palmlight Media" />
 
         <div className="plm-about-image-fade"></div>
 
@@ -2091,7 +2091,7 @@ export default function PalmLightMediaLanding() {
 
         <span></span>
 
-        ABOUT PALM LIGHT MEDIA
+        ABOUT PALMLIGHT MEDIA
 
       </div>
 
@@ -2121,7 +2121,7 @@ export default function PalmLightMediaLanding() {
 
       <p className="plm-about-text">
 
-        Palm Light Media helps businesses in Muscat build
+        Palmlight Media helps businesses in Muscat build
         a stronger digital presence through design, technology
         and marketing that actually works together.
 
@@ -2261,7 +2261,7 @@ export default function PalmLightMediaLanding() {
 
         <span></span>
 
-        WHY PALM LIGHT MEDIA
+        WHY PALMLIGHT MEDIA
 
       </div>
 
@@ -2502,7 +2502,7 @@ export default function PalmLightMediaLanding() {
 
 
 {/* =========================================================
-     PALM LIGHT MEDIA — CLIENT TESTIMONIALS
+     PALMLIGHT MEDIA — CLIENT TESTIMONIALS
      AUTO MOVING PREMIUM VERSION
 ========================================================= */}
 
@@ -2552,7 +2552,7 @@ export default function PalmLightMediaLanding() {
       <p className="plm-testimonials-intro">
 
         See what business owners say after working
-        with Palm Light Media.
+        with Palmlight Media.
 
       </p>
 
@@ -2626,7 +2626,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Palm Light Media exceeded my expectations.
+              Palmlight Media exceeded my expectations.
               Their team created engaging content and a strong
               social media strategy that helped my business reach
               more customers. The process was smooth,
@@ -2708,7 +2708,7 @@ export default function PalmLightMediaLanding() {
 
               I was looking for a creative agency that could
               handle my branding and social media without
-              breaking the budget. Palm Light Media delivered
+              breaking the budget. Palmlight Media delivered
               outstanding designs, engaging content, and
               excellent communication throughout the project.
 
@@ -2716,6 +2716,8 @@ export default function PalmLightMediaLanding() {
 
           </div>
 
+
+          {/* Bottom */}
 
           <div className="plm-card-bottom">
 
@@ -2795,6 +2797,8 @@ export default function PalmLightMediaLanding() {
           </div>
 
 
+          {/* Bottom */}
+
           <div className="plm-card-bottom">
 
             <div className="plm-stars">
@@ -2873,6 +2877,8 @@ export default function PalmLightMediaLanding() {
           </div>
 
 
+          {/* Bottom */}
+
           <div className="plm-card-bottom">
 
             <div className="plm-stars">
@@ -2939,7 +2945,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Palm Light Media exceeded my expectations.
+              Palmlight Media exceeded my expectations.
               Their team created engaging content and a strong
               social media strategy that helped my business reach
               more customers. The process was smooth,
@@ -3011,7 +3017,7 @@ export default function PalmLightMediaLanding() {
 
               I was looking for a creative agency that could
               handle my branding and social media without
-              breaking the budget. Palm Light Media delivered
+              breaking the budget. Palmlight Media delivered
               outstanding designs, engaging content, and
               excellent communication throughout the project.
 
@@ -3264,7 +3270,7 @@ export default function PalmLightMediaLanding() {
 
     <div className="plm-video-bg">
 
-        <iframe src="https://www.youtube.com/embed/D3r5dxDSZXI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=D3r5dxDSZXI&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;disablekb=1" title="Palm Light Media" allow="
+        <iframe src="https://www.youtube.com/embed/D3r5dxDSZXI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=D3r5dxDSZXI&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;disablekb=1" title="Palmlight Media" allow="
                 autoplay;
                 encrypted-media;
                 picture-in-picture;
@@ -3339,7 +3345,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-video-buttons">
 
 
-            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-video-btn plm-video-btn-primary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-video-btn plm-video-btn-primary">
 
                 Start Your Project
 
@@ -3374,7 +3380,7 @@ export default function PalmLightMediaLanding() {
 
 
 {/* =========================================================
-     PALM LIGHT MEDIA — PORTFOLIO
+     PALMLIGHT MEDIA — PORTFOLIO
 ========================================================= */}
 
 <section className="plm-work" id="portfolio">
@@ -4528,7 +4534,7 @@ export default function PalmLightMediaLanding() {
 
                     Everything you need to know before
                     starting your next project with
-                    Palm Light Media.
+                    Palmlight Media.
 
                 </p>
 
@@ -4567,7 +4573,7 @@ export default function PalmLightMediaLanding() {
 
                 <div className="plm-faq-intro-label">
 
-                    Palm Light Media
+                    Palmlight Media
 
                 </div>
 
@@ -4692,7 +4698,7 @@ export default function PalmLightMediaLanding() {
 
                             <div className="plm-faq-answer-content">
 
-                                Yes. Palm Light Media focuses
+                                Yes. Palmlight Media focuses
                                 on helping businesses in Muscat
                                 build stronger brands, better
                                 websites and a more effective
@@ -5103,7 +5109,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-cta-buttons">
 
 
-            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-primary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-primary">
 
                 Start Your Project
 
@@ -5112,7 +5118,7 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-secondary">
+            <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-cta-btn plm-cta-secondary">
 
                 Talk to Us
 
@@ -5196,7 +5202,7 @@ export default function PalmLightMediaLanding() {
                 Tell us what you're building, where you're stuck,
                 and where you want to go.
 
-                We'll figure out how Palm Light Media can help
+                We'll figure out how Palmlight Media can help
                 turn that idea into something people notice.
 
             </p>
@@ -5213,7 +5219,7 @@ export default function PalmLightMediaLanding() {
                      CALL
                 ============================================== */}
 
-                <a href="tel:+96875186675" className="plm-contact-detail" aria-label="Call Palm Light Media">
+                <a href="tel:+96875186675" className="plm-contact-detail" aria-label="Call Palmlight Media">
 
                     <div className="plm-contact-icon">
 
@@ -5258,7 +5264,7 @@ export default function PalmLightMediaLanding() {
                      EMAIL
                 ============================================== */}
 
-                <a href="mailto:info@palmlightmedia.com" className="plm-contact-detail" aria-label="Email Palm Light Media">
+                <a href="mailto:info@palmlightmedia.com" className="plm-contact-detail" aria-label="Email Palmlight Media">
 
                     <div className="plm-contact-icon">
 
@@ -5298,7 +5304,7 @@ export default function PalmLightMediaLanding() {
                      WEBSITE
                 ============================================== */}
 
-                <a href="https://palmlightmedia.com" className="plm-contact-detail" target="_blank" rel="noopener noreferrer" aria-label="Visit Palm Light Media website">
+                <a href="https://palmlightmedia.com" className="plm-contact-detail" target="_blank" rel="noopener noreferrer" aria-label="Visit Palmlight Media website">
 
                     <div className="plm-contact-icon">
 
@@ -5344,7 +5350,7 @@ export default function PalmLightMediaLanding() {
                      ADDRESS
                 ============================================== */}
 
-                <div className="plm-contact-detail" aria-label="Palm Light Media address">
+                <div className="plm-contact-detail" aria-label="Palmlight Media address">
 
                     <div className="plm-contact-icon">
 
@@ -5667,10 +5673,10 @@ export default function PalmLightMediaLanding() {
 
                 <a href="#home" className="plm-footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
-                    <img src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palm Light Media" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
+                    <img src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
 
                     <span className="plm-footer-logo-text" style={{ color: '#ffffff', fontSize: '22px', fontWeight: '900', letterSpacing: '-0.7px' }}>
-                        Palm Light <span style={{ color: '#a855f7' }}>Media</span>
+                        Palmlight <span style={{ color: '#a855f7' }}>Media</span>
                     </span>
 
                 </a>
@@ -5864,7 +5870,7 @@ export default function PalmLightMediaLanding() {
             </div>
 
 
-            <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-footer-mini-btn">
+            <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" className="plm-footer-mini-btn">
 
                 Start Your Project
 
@@ -5885,7 +5891,7 @@ export default function PalmLightMediaLanding() {
 
             <div className="plm-footer-copyright">
 
-                © 2026 Palm Light Media.
+                © 2026 Palmlight Media.
                 All rights reserved.
 
             </div>
@@ -5922,7 +5928,7 @@ export default function PalmLightMediaLanding() {
          THIS IS THE ONLY FIXED ELEMENT
     ========================================================== */}
 
-    <a href="https://wa.me/96875186675?text=Hello%20Palm%20Light%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." className="plm-sticky-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Palm Light Media on WhatsApp">
+    <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." className="plm-sticky-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Palmlight Media on WhatsApp">
 
         <span className="plm-wa-pulse"></span>
 

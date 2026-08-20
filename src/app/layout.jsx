@@ -4,16 +4,16 @@ const desc = 'Websites. Social media. Design. Video. Apps. Software. SEO. Paid A
 const url = 'https://palmlightmedia.com';
 
 export const metadata = {
-  title: 'Palm Light Media — Digital Agency Muscat, Oman',
+  title: 'Palmlight Media — Digital Agency Muscat, Oman',
   description: desc,
   metadataBase: new URL(url),
   icons: '/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png',
-  keywords: 'Websites, Social media, Design, Video, Apps, Software, SEO, Paid Ads, Muscat, Oman, Palm Light Media',
+  keywords: 'Websites, Social media, Design, Video, Apps, Software, SEO, Paid Ads, Muscat, Oman, Palmlight Media',
   openGraph: {
-    title: 'Palm Light Media — Digital Agency Muscat',
+    title: 'Palmlight Media — Digital Agency Muscat',
     description: desc,
     url: url,
-    siteName: 'Palm Light Media',
+    siteName: 'Palmlight Media',
     type: 'website',
   },
 };
