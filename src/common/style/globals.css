@@ -464,6 +464,50 @@ li {
   background: rgba(168, 85, 247, 0.35) !important;
 }
 
+@media (max-width: 768px) {
+  .plm3-proof {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    margin-top: 32px !important;
+    width: 100% !important;
+    padding: 18px 20px !important;
+    background: rgba(25, 26, 38, 0.65) !important;
+    border: 1px solid rgba(168, 85, 247, 0.25) !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .plm3-proof-number {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .plm3-proof-number strong {
+    font-size: 28px !important;
+    min-width: 58px !important;
+  }
+
+  .plm3-proof-number span {
+    font-size: 14px !important;
+    letter-spacing: 0.5px !important;
+    white-space: normal !important;
+  }
+
+  .plm3-proof-line {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+  }
+}
+
 /* =========================================================
    TESTIMONIAL TRUST STATS (35+ HAPPY CLIENTS, etc.)
 ========================================================= */
