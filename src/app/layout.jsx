@@ -1,4 +1,19 @@
 import '../common/style/globals.css';
+import { Poppins, Roboto } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-poppins',
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  display: 'swap',
+  variable: '--font-roboto',
+});
 
 const desc = 'Websites. Social media. Design. Video. Apps. Software. SEO. Paid Ads. Everything your business needs to get seen, chosen and remembered.';
 const url = 'https://palmlightmedia.com';
@@ -20,15 +35,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
       <body>{children}</body>
     </html>
   );

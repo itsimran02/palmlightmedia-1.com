@@ -469,15 +469,15 @@ li {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    gap: 14px !important;
+    gap: 16px !important;
     margin-top: 32px !important;
     width: 100% !important;
-    padding: 18px 20px !important;
-    background: rgba(25, 26, 38, 0.65) !important;
-    border: 1px solid rgba(168, 85, 247, 0.25) !important;
+    padding: 22px 24px !important;
+    background: rgba(25, 26, 38, 0.7) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
     border-radius: 20px !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
     box-sizing: border-box !important;
   }
 
@@ -485,26 +485,32 @@ li {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    gap: 14px !important;
+    gap: 16px !important;
     width: 100% !important;
   }
 
   .plm3-proof-number strong {
     font-size: 28px !important;
-    min-width: 58px !important;
+    width: 84px !important;
+    min-width: 84px !important;
+    max-width: 84px !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    text-align: left !important;
   }
 
   .plm3-proof-number span {
     font-size: 14px !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.6px !important;
     white-space: normal !important;
+    line-height: 1.35 !important;
   }
 
   .plm3-proof-line {
     display: block !important;
     width: 100% !important;
     height: 1px !important;
-    background: rgba(168, 85, 247, 0.2) !important;
+    background: rgba(168, 85, 247, 0.22) !important;
   }
 }
 
@@ -656,6 +662,70 @@ li {
     height: 280px !important;
   }
 }
+
+/* =========================================================
+   MOBILE SERVICE CARDS & ARROW OVERLAP FIX
+========================================================= */
+@media (max-width: 768px) {
+  .plm-service-card {
+    display: grid !important;
+    grid-template-columns: 24px 50px minmax(0, 1fr) 38px !important;
+    align-items: start !important;
+    gap: 10px !important;
+    padding: 22px 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .plm-service-number {
+    font-size: 13px !important;
+    color: #64748b !important;
+    padding-top: 4px !important;
+  }
+
+  .plm-service-icon {
+    width: 50px !important;
+    height: 50px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .plm-service-main {
+    min-width: 0 !important;
+    padding-right: 4px !important;
+  }
+
+  .plm-service-main h3 {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    margin: 4px 0 10px 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: baseline !important;
+    gap: 5px !important;
+    word-break: break-word !important;
+  }
+
+  .plm-service-main h3 em {
+    font-style: normal !important;
+    color: #a855f7 !important;
+    margin-left: 0 !important;
+  }
+
+  .plm-service-arrow {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 15px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    grid-column: 4 !important;
+    align-self: flex-start !important;
+    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
 
 
 

@@ -787,7 +787,7 @@ export default function PalmLightMediaLanding() {
 
         <a href="#home" className="plm-nav-logo" aria-label="Palmlight Media" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
-            <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
+            <img decoding="async" src="/logo.jpeg" alt="Palmlight Media Logo" width="44" height="44" style={{height:'44px', width:'44px', objectFit:'cover', borderRadius:'50%'}} />
 
             <span style={{ color: '#ffffff', fontSize: '19px', fontWeight: '900', letterSpacing: '-0.5px' }}>
                 Palmlight <span style={{ color: '#a855f7' }}>Media</span>
@@ -902,7 +902,7 @@ export default function PalmLightMediaLanding() {
 
             <a href="#home" className="plm-mobile-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
 
-                <img decoding="async" src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
+                <img decoding="async" src="/logo.jpeg" alt="Palmlight Media Logo" width="38" height="38" style={{height:'38px', width:'38px', objectFit:'cover', borderRadius:'50%'}} />
 
                 <span style={{ color: '#ffffff', fontSize: '18px', fontWeight: '900', letterSpacing: '-0.5px' }}>
                     Palmlight <span style={{ color: '#a855f7' }}>Media</span>
@@ -1199,7 +1199,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Businesses<br />
+            Businesses
             served
           </span>
 
@@ -1216,7 +1216,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Digital<br />
+            Digital
             services
           </span>
 
@@ -1233,7 +1233,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Goal —<br />
+            Goal 
             your growth
           </span>
 
@@ -2083,7 +2083,7 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-about-image-glow"></div>
 
-        <img decoding="async" className="plm-about-image" src="wp-content/uploads/2026/08/WhatsApp-Image-2026-08-15-at-6.55.21-PM.jpeg" alt="Shahnwaz Khan - Founder of Palmlight Media" />
+        <img decoding="async" loading="lazy" className="plm-about-image" src="wp-content/uploads/2026/08/WhatsApp-Image-2026-08-15-at-6.55.21-PM.jpeg" alt="Shahnwaz Khan - Founder of Palmlight Media" />
 
         <div className="plm-about-image-fade"></div>
 
@@ -3315,7 +3315,7 @@ export default function PalmLightMediaLanding() {
 
     <div className="plm-video-bg">
 
-        <iframe src="https://www.youtube.com/embed/D3r5dxDSZXI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=D3r5dxDSZXI&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;disablekb=1" title="Palmlight Media" allow="
+        <iframe src="https://www.youtube.com/embed/D3r5dxDSZXI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=D3r5dxDSZXI&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;disablekb=1" title="Palmlight Media Video Showcase" loading="lazy" allow="
                 autoplay;
                 encrypted-media;
                 picture-in-picture;
@@ -5719,7 +5719,7 @@ export default function PalmLightMediaLanding() {
 
                 <a href="#home" className="plm-footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
 
-                    <img src="https://agency-mocha-theta.vercel.app/_next/image?url=%2Flogo.jpeg&w=96&q=100" alt="Palmlight Media" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
+                    <img src="/logo.jpeg" alt="Palmlight Media Logo" width="52" height="52" style={{height:'52px', width:'52px', objectFit:'cover', borderRadius:'50%'}} />
 
                     <span className="plm-footer-logo-text" style={{ color: '#ffffff', fontSize: '22px', fontWeight: '900', letterSpacing: '-0.7px' }}>
                         Palmlight <span style={{ color: '#a855f7' }}>Media</span>
