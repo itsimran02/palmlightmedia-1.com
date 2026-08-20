@@ -565,5 +565,53 @@ li {
   }
 }
 
+/* =========================================================
+   HERO FLOATING LAPTOP SHOWCASE
+========================================================= */
+.plm3-core.plm3-core-laptop {
+  width: 380px !important;
+  height: 380px !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.plm3-core.plm3-core-laptop::before,
+.plm3-core.plm3-core-laptop::after {
+  display: none !important;
+}
+
+.plm3-laptop-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  mix-blend-mode: screen !important;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 98%) !important;
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 98%) !important;
+  filter: drop-shadow(0 0 35px rgba(168, 85, 247, 0.5)) !important;
+  animation: floatLaptop 6s ease-in-out infinite !important;
+  transform-origin: center center !important;
+}
+
+@keyframes floatLaptop {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1.5deg) scale(1.02);
+  }
+}
+
+@media (max-width: 900px) {
+  .plm3-core.plm3-core-laptop {
+    width: 280px !important;
+    height: 280px !important;
+  }
+}
+
+
 
 

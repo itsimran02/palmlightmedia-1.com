@@ -1297,27 +1297,15 @@ export default function PalmLightMediaLanding() {
       </div>
 
 
-      {/* MAIN 3D OBJECT */}
+      {/* MAIN 3D OBJECT — FLOATING LAPTOP SHOWCASE */}
 
-      <div className="plm3-core">
+      <div className="plm3-core plm3-core-laptop">
 
-        <div className="plm3-core-inner">
-
-          <div className="plm3-logo-mark">
-            PL
-          </div>
-
-          <div className="plm3-core-title">
-            PALM<br />
-            LIGHT
-          </div>
-
-          <div className="plm3-core-small">
-            FROM IDEA<br />
-            TO SPOTLIGHT
-          </div>
-
-        </div>
+        <img
+          src="/hero-laptop.png"
+          alt="Palmlight Media 3D Floating Laptop Showcase"
+          className="plm3-laptop-img"
+        />
 
       </div>
 
