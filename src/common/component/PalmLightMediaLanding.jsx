@@ -2185,8 +2185,8 @@ export default function PalmLightMediaLanding() {
 
         <p>
 
-          We don't just create things that
-          <strong>look good.</strong>
+          We don't just create things that &nbsp;
+          <strong> look good.</strong>&nbsp;
 
           We create digital experiences
           designed to move your business forward.
