@@ -5032,7 +5032,7 @@ export default function PalmLightMediaLanding() {
      FINAL CTA
 ========================================================= */}
 
-<section className="plm-final-cta" id="contact">
+<section className="plm-final-cta" id="final-cta">
 
 
     {/* BACKGROUND GRID */}
@@ -5145,7 +5145,8 @@ export default function PalmLightMediaLanding() {
      CONTACT SECTION
 ========================================================= */}
 
-<section className="plm-contact" id="contact-us">
+<section className="plm-contact" id="contact">
+  <div id="contact-us"></div>
 
 
     {/* BACKGROUND */}
