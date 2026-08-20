@@ -512,3 +512,18 @@ li {
   background: rgba(168, 85, 247, 0.35) !important;
 }
 
+/* =========================================================
+   CUSTOM MODAL ANIMATION
+========================================================= */
+@keyframes plmModalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+

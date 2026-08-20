@@ -7,6 +7,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function PalmLightMediaLanding() {
   const [activeFaq, setActiveFaq] = useState(0);
+  const [formModal, setFormModal] = useState({
+    open: false,
+    success: true,
+    title: "",
+    message: ""
+  });
 
   const toggleFaq = (index) => {
     setActiveFaq(prev => prev === index ? -1 : index);
@@ -23,6 +29,18 @@ export default function PalmLightMediaLanding() {
         smoothWheel: true,
         wheelMultiplier: 0.9,
       });
+
+      const handleFormResult = (e) => {
+        if (e.detail) {
+          setFormModal({
+            open: true,
+            success: e.detail.success,
+            title: e.detail.title,
+            message: e.detail.message
+          });
+        }
+      };
+      window.addEventListener("plmFormResult", handleFormResult);
 
       lenis.on("scroll", ScrollTrigger.update);
 
@@ -142,13 +160,31 @@ export default function PalmLightMediaLanding() {
                     });
                     const data = await res.json();
                     if (data.success) {
-                        alert("Thank you! Your consultation request has been sent successfully.");
+                        window.dispatchEvent(new CustomEvent("plmFormResult", {
+                            detail: {
+                                success: true,
+                                title: "Consultation Request Sent!",
+                                message: "Thank you! Our team at Palmlight Media has received your details and will contact you shortly."
+                            }
+                        }));
                         contactForm.reset();
                     } else {
-                        alert("There was an issue sending your message. Please try again.");
+                        window.dispatchEvent(new CustomEvent("plmFormResult", {
+                            detail: {
+                                success: false,
+                                title: "Submission Issue",
+                                message: "There was an issue processing your request. Please try again or chat with us directly on WhatsApp."
+                            }
+                        }));
                     }
                 } catch (err) {
-                    alert("Submission error. Please check your connection and try again.");
+                    window.dispatchEvent(new CustomEvent("plmFormResult", {
+                        detail: {
+                            success: false,
+                            title: "Connection Error",
+                            message: "Unable to send your request. Please check your network connection or message us on WhatsApp."
+                        }
+                    }));
                 } finally {
                     if (submitBtn) {
                         submitBtn.innerText = originalText;
@@ -713,6 +749,7 @@ export default function PalmLightMediaLanding() {
     }
 
     return () => {
+      window.removeEventListener("plmFormResult", handleFormResult);
       if (rafHandler) gsap.ticker.remove(rafHandler);
       if (lenis) lenis.destroy();
       ScrollTrigger.getAll().forEach((t) => t.kill());
@@ -5955,6 +5992,146 @@ export default function PalmLightMediaLanding() {
 
 
 </footer>
+
+{/* =========================================================
+     CUSTOM GLASSMORPHIC CONSULTATION SUCCESS / ERROR MODAL
+========================================================= */}
+{formModal.open && (
+  <div
+    className="plm-modal-backdrop"
+    style={{
+      position: 'fixed',
+      inset: 0,
+      zIndex: 999999,
+      background: 'rgba(10, 10, 16, 0.85)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '24px',
+      animation: 'plmModalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
+    }}
+    onClick={() => setFormModal(prev => ({ ...prev, open: false }))}
+  >
+    <div
+      className="plm-modal-card"
+      style={{
+        position: 'relative',
+        width: '100%',
+        maxWidth: '460px',
+        background: 'linear-gradient(145deg, rgba(26, 27, 40, 0.96), rgba(16, 17, 26, 0.98))',
+        border: '1px solid rgba(168, 85, 247, 0.4)',
+        borderRadius: '24px',
+        padding: '40px 32px 32px',
+        textAlign: 'center',
+        boxShadow: '0 30px 90px rgba(0, 0, 0, 0.7), 0 0 50px rgba(168, 85, 247, 0.25)',
+        color: '#ffffff',
+        overflow: 'hidden'
+      }}
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Background Ambient Radial Glow */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '-60px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '220px',
+          height: '220px',
+          borderRadius: '50%',
+          background: formModal.success
+            ? 'radial-gradient(circle, rgba(168, 85, 247, 0.35) 0%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(239, 68, 68, 0.35) 0%, transparent 70%)',
+          pointerEvents: 'none'
+        }}
+      />
+
+      {/* Icon Badge */}
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          width: '72px',
+          height: '72px',
+          margin: '0 auto 24px',
+          borderRadius: '50%',
+          background: formModal.success
+            ? 'linear-gradient(135deg, #a855f7, #7c3aed)'
+            : 'linear-gradient(135deg, #ef4444, #dc2626)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '34px',
+          fontWeight: '900',
+          color: '#ffffff',
+          boxShadow: formModal.success
+            ? '0 0 30px rgba(168, 85, 247, 0.65)'
+            : '0 0 30px rgba(239, 68, 68, 0.65)'
+        }}
+      >
+        {formModal.success ? '✓' : '!'}
+      </div>
+
+      {/* Title */}
+      <h3
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          fontSize: '24px',
+          fontWeight: '800',
+          marginBottom: '12px',
+          color: '#ffffff',
+          letterSpacing: '-0.5px',
+          fontFamily: 'Poppins, system-ui, sans-serif'
+        }}
+      >
+        {formModal.title}
+      </h3>
+
+      {/* Message */}
+      <p
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          fontSize: '16px',
+          lineHeight: '1.65',
+          color: '#cbd5e1',
+          marginBottom: '32px',
+          fontWeight: '400'
+        }}
+      >
+        {formModal.message}
+      </p>
+
+      {/* Action Button */}
+      <button
+        type="button"
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          width: '100%',
+          padding: '16px 28px',
+          borderRadius: '16px',
+          border: 'none',
+          background: formModal.success
+            ? 'linear-gradient(135deg, #a855f7, #9333ea)'
+            : 'rgba(255, 255, 255, 0.12)',
+          color: '#ffffff',
+          fontSize: '16px',
+          fontWeight: '700',
+          cursor: 'pointer',
+          boxShadow: formModal.success ? '0 10px 30px rgba(168, 85, 247, 0.45)' : 'none',
+          transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+        }}
+        onClick={() => setFormModal(prev => ({ ...prev, open: false }))}
+      >
+        {formModal.success ? 'Got It' : 'Try Again'}
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 }
