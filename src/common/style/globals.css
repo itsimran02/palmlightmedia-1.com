@@ -199,7 +199,7 @@ section,
 }
 
 /* =========================================================
-   MOBILE: KILL ALL REMAINING ANIMATIONS
+   MOBILE NAVIGATION & HERO ANIMATIONS
 ========================================================= */
 @media (max-width: 768px) {
   .plm-nav {
@@ -207,16 +207,17 @@ section,
     width: calc(100% - 24px) !important;
   }
 
-  /* Kill everything that animates on mobile except smooth marquees */
-  *[class*="plm3-"]:not(.plm3-marquee-track):not(.plm3-marquee-group),
-  *[class*="plm-about-glow"],
-  *[class*="plm-why-glow"],
-  *[class*="plm-pricing-glow"],
-  *[class*="plm-cta-orb"],
-  *[class*="plm-contact-orb"],
-  *[class*="plm-footer-orb"] {
-    animation: none !important;
-    filter: none !important;
+  /* Ensure Hero 3D rings, floating laptop & marquees animate smoothly on mobile */
+  .plm3-ring,
+  .plm3-orbit,
+  .plm3-service,
+  .plm3-core,
+  .plm3-laptop-img,
+  .plm3-card,
+  .plm3-marquee-track,
+  .plm3-marquee-group {
+    animation-play-state: running !important;
+    will-change: transform !important;
   }
 }
 
