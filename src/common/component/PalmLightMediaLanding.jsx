@@ -5981,9 +5981,10 @@ export default function PalmLightMediaLanding() {
     </div>
 
 
+</footer>
+
     {/* =========================================================
-         STICKY WHATSAPP
-         THIS IS THE ONLY FIXED ELEMENT
+         SITEWIDE STICKY FLOATING WHATSAPP
     ========================================================== */}
 
     <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20discuss%20a%20project." className="plm-sticky-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Palmlight Media on WhatsApp">
@@ -6009,9 +6010,6 @@ export default function PalmLightMediaLanding() {
         </span>
 
     </a>
-
-
-</footer>
 
 {/* =========================================================
      CUSTOM GLASSMORPHIC CONSULTATION SUCCESS / ERROR MODAL
