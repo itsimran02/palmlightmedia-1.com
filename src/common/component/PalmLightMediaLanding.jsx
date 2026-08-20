@@ -135,6 +135,34 @@ export default function PalmLightMediaLanding() {
             contactForm.dataset.bound = "true";
             contactForm.addEventListener("submit", async function (e) {
                 e.preventDefault();
+
+                // 1. Native HTML5 form validity check
+                if (!contactForm.checkValidity()) {
+                    contactForm.reportValidity();
+                    return;
+                }
+
+                const name = document.getElementById("plm-name")?.value?.trim();
+                const business = document.getElementById("plm-business")?.value?.trim();
+                const email = document.getElementById("plm-email")?.value?.trim();
+                const phone = document.getElementById("plm-phone")?.value?.trim();
+                const service = document.getElementById("plm-service")?.value?.trim();
+                const budget = document.getElementById("plm-budget")?.value?.trim();
+                const message = document.getElementById("plm-message")?.value?.trim();
+
+                // 2. Mandatory fields validation check (Name, Email, Phone, Service, Budget required)
+                if (!name || !email || !phone || !service || !budget) {
+                    window.dispatchEvent(new CustomEvent("plmFormResult", {
+                        detail: {
+                            success: false,
+                            title: "Missing Required Fields",
+                            message: "Please fill in all mandatory fields (* Name, Email, Phone, Service, and Budget) before submitting."
+                        }
+                    }));
+                    contactForm.reportValidity();
+                    return;
+                }
+
                 const submitBtn = contactForm.querySelector(".plm-form-submit");
                 const originalText = submitBtn ? submitBtn.innerText : "Send Project Request ↗";
                 if (submitBtn) {
@@ -142,15 +170,7 @@ export default function PalmLightMediaLanding() {
                     submitBtn.disabled = true;
                 }
 
-                const formData = {
-                    name: document.getElementById("plm-name")?.value,
-                    business: document.getElementById("plm-business")?.value,
-                    email: document.getElementById("plm-email")?.value,
-                    phone: document.getElementById("plm-phone")?.value,
-                    service: document.getElementById("plm-service")?.value,
-                    budget: document.getElementById("plm-budget")?.value,
-                    message: document.getElementById("plm-message")?.value,
-                };
+                const formData = { name, business, email, phone, service, budget, message };
 
                 try {
                     const res = await fetch("/api/sendEmail", {
@@ -5473,7 +5493,7 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-name">
-                            Your Name
+                            Your Name *
                         </label>
 
                         <input type="text" id="plm-name" name="name" placeholder="Enter your name" required="" />
@@ -5486,7 +5506,7 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-business">
-                            Business Name
+                            Business Name <span style={{ opacity: 0.6, fontSize: '13px', fontWeight: 'normal' }}>(Optional)</span>
                         </label>
 
                         <input type="text" id="plm-business" name="business" placeholder="Your business" />
@@ -5499,7 +5519,7 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-email">
-                            Email
+                            Email *
                         </label>
 
                         <input type="email" id="plm-email" name="email" placeholder="you@example.com" required="" />
@@ -5512,10 +5532,10 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-phone">
-                            Phone
+                            Phone *
                         </label>
 
-                        <input type="tel" id="plm-phone" name="phone" placeholder="+968 XXXXXXXX" />
+                        <input type="tel" id="plm-phone" name="phone" placeholder="+968 XXXXXXXX" required="" />
 
                     </div>
 
@@ -5525,10 +5545,10 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-service">
-                            What do you need?
+                            What do you need? *
                         </label>
 
-                        <select id="plm-service" name="service">
+                        <select id="plm-service" name="service" required="">
 
                             <option value="">
                                 Select a service
@@ -5584,10 +5604,10 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field">
 
                         <label htmlFor="plm-budget">
-                            Approx. Budget
+                            Approx. Budget *
                         </label>
 
-                        <select id="plm-budget" name="budget">
+                        <select id="plm-budget" name="budget" required="">
 
                             <option value="">
                                 Select budget
@@ -5627,10 +5647,10 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-form-field full">
 
                         <label htmlFor="plm-message">
-                            Tell us about your project
+                            Tell us about your project <span style={{ opacity: 0.6, fontSize: '13px', fontWeight: 'normal' }}>(Optional)</span>
                         </label>
 
-                        <textarea id="plm-message" name="message" placeholder="What are you looking to build, improve or promote?" required=""></textarea>
+                        <textarea id="plm-message" name="message" placeholder="What are you looking to build, improve or promote?"></textarea>
 
                     </div>
 
