@@ -9787,6 +9787,15 @@ html{
   position:
     relative;
 
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    space-between;
+
   width:
     410px;
 
@@ -10157,7 +10166,19 @@ html{
     4;
 
   margin-top:
-    58px;
+    24px;
+
+  margin-bottom:
+    24px;
+
+  flex:
+    1 1 auto;
+
+  display:
+    flex;
+
+  align-items:
+    center;
 
 }
 
@@ -10189,19 +10210,16 @@ html{
 .plm-card-bottom {
 
   position:
-    absolute;
+    relative;
 
   z-index:
     5;
 
-  left:
-    30px;
+  width:
+    100%;
 
-  right:
-    30px;
-
-  bottom:
-    25px;
+  margin-top:
+    auto;
 
   display:
     flex;
@@ -10594,7 +10612,10 @@ html{
   .plm-card-content {
 
     margin-top:
-      48px;
+      20px;
+
+    margin-bottom:
+      20px;
 
   }
 
@@ -10623,14 +10644,8 @@ html{
 
   .plm-card-bottom {
 
-    left:
-      23px;
-
-    right:
-      23px;
-
-    bottom:
-      20px;
+    padding-top:
+      14px;
 
   }
 
