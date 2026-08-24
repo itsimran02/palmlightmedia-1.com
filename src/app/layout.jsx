@@ -29,7 +29,21 @@ export const metadata = {
     description: desc,
     url: url,
     siteName: 'Palmlight Media',
+    images: [
+      {
+        url: '/meta-img.png',
+        width: 1200,
+        height: 630,
+        alt: 'Palmlight Media — Digital Agency Muscat',
+      },
+    ],
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Palmlight Media — Digital Agency Muscat',
+    description: desc,
+    images: ['/meta-img.png'],
   },
 };
 
