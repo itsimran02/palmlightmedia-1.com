@@ -22,7 +22,14 @@ export const metadata = {
   title: 'Palmlight Media — Digital Agency Muscat, Oman',
   description: desc,
   metadataBase: new URL(url),
-  icons: '/wp-content/uploads/2026/08/palmlightmedia-logo-transparent.png',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/logo.jpeg', type: 'image/jpeg' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/logo.jpeg',
+  },
   keywords: 'Websites, Social media, Design, Video, Apps, Software, SEO, Paid Ads, Muscat, Oman, Palmlight Media',
   openGraph: {
     title: 'Palmlight Media — Digital Agency Muscat',
