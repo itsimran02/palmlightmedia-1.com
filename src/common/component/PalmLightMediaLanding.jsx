@@ -2941,6 +2941,149 @@ export default function PalmLightMediaLanding() {
 
 
         {/* =================================================
+             TESTIMONIAL 05 — NAZIM ALI
+        ================================================== */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Nazim-Ali.jpeg" alt="Nazim Ali" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Nazim Ali
+                </strong>
+
+                <span>
+                  Self-Employed
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              05
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              I worked with Palmlight Media on my website and SEO,
+              and honestly, I’m very happy with the results.
+              They understood what I needed and made the whole
+              process easy and smooth. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+
+
+        {/* =================================================
+             TESTIMONIAL 06 — MERYEM NOUR
+        ================================================== */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Meryem.jpeg" alt="Meryem Nour" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Meryem Nour
+                </strong>
+
+                <span>
+                  Self-Employed
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              06
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped me with my website setup
+              and SEO, and the experience was really good.
+              They were helpful, professional, and made sure
+              everything was done properly. I’m happy with the
+              final result. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+
+
+        {/* =================================================
              DUPLICATE SET
              Needed for seamless infinite animation
         ================================================== */}
@@ -3205,6 +3348,145 @@ export default function PalmLightMediaLanding() {
               find and understand. People in Austin can quickly
               contact me, and I've noticed more new customers
               finding me online.
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+
+
+        {/* NAZIM ALI */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Nazim-Ali.jpeg" alt="Nazim Ali" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Nazim Ali
+                </strong>
+
+                <span>
+                  Self-Employed
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              05
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              I worked with Palmlight Media on my website and SEO,
+              and honestly, I’m very happy with the results.
+              They understood what I needed and made the whole
+              process easy and smooth. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+
+
+        {/* MERYEM NOUR */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Meryem.jpeg" alt="Meryem Nour" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Meryem Nour
+                </strong>
+
+                <span>
+                  Self-Employed
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              06
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped me with my website setup
+              and SEO, and the experience was really good.
+              They were helpful, professional, and made sure
+              everything was done properly. I’m happy with the
+              final result. Highly recommended!
 
             </p>
 
