@@ -808,11 +808,6 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="#what-we-do" className="plm-nav-link" data-section="what-we-do">
-                What We Do
-            </a>
-
-
             <a href="#about" className="plm-nav-link" data-section="about">
                 About
             </a>
@@ -835,11 +830,6 @@ export default function PalmLightMediaLanding() {
 
             <a href="#pricing" className="plm-nav-link" data-section="pricing">
                 Pricing
-            </a>
-
-
-            <a href="#faq" className="plm-nav-link" data-section="faq">
-                FAQ
             </a>
 
 
@@ -933,28 +923,11 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="#what-we-do" className="plm-mobile-link" data-section="what-we-do">
-
-                <span>
-                    <small className="plm-mobile-number">
-                        02
-                    </small>
-
-                    What We Do
-                </span>
-
-                <span className="plm-mobile-arrow">
-                    →
-                </span>
-
-            </a>
-
-
             <a href="#about" className="plm-mobile-link" data-section="about">
 
                 <span>
                     <small className="plm-mobile-number">
-                        03
+                        02
                     </small>
 
                     About
@@ -971,7 +944,7 @@ export default function PalmLightMediaLanding() {
 
                 <span>
                     <small className="plm-mobile-number">
-                        04
+                        03
                     </small>
 
                     Why Us
@@ -988,7 +961,7 @@ export default function PalmLightMediaLanding() {
 
                 <span>
                     <small className="plm-mobile-number">
-                        05
+                        04
                     </small>
 
                     Testimonials
@@ -1005,7 +978,7 @@ export default function PalmLightMediaLanding() {
 
                 <span>
                     <small className="plm-mobile-number">
-                        06
+                        05
                     </small>
 
                     Portfolio
@@ -1022,27 +995,10 @@ export default function PalmLightMediaLanding() {
 
                 <span>
                     <small className="plm-mobile-number">
-                        07
+                        06
                     </small>
 
                     Pricing
-                </span>
-
-                <span className="plm-mobile-arrow">
-                    →
-                </span>
-
-            </a>
-
-
-            <a href="#faq" className="plm-mobile-link" data-section="faq">
-
-                <span>
-                    <small className="plm-mobile-number">
-                        08
-                    </small>
-
-                    FAQ
                 </span>
 
                 <span className="plm-mobile-arrow">
@@ -1056,7 +1012,7 @@ export default function PalmLightMediaLanding() {
 
                 <span>
                     <small className="plm-mobile-number">
-                        09
+                        07
                     </small>
 
                     Contact
