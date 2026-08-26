@@ -135,7 +135,7 @@ function generateLeadEmailHTML(lead) {
           <tr>
             <td style="background: #0d0e14; padding: 24px 32px; text-align: center; border-top: 1px solid #1e202e; color: #64748b; font-size: 13px;">
               <p style="margin: 0 0 6px;">
-                © 2026 <strong style="color: #94a3b8;">Palmlight Media</strong> • Muscat, Oman
+                © 2026 <strong style="color: #94a3b8;">Palmlight Media</strong> • Global / Remote
               </p>
               <p style="margin: 0; font-size: 12px; color: #475569;">
                 Automatic Lead Delivery System • <a href="https://palmlightmedia.com" style="color: #a855f7; text-decoration: none;">palmlightmedia.com</a>

@@ -1080,7 +1080,7 @@ export default function PalmLightMediaLanding() {
 
             <div className="plm-mobile-bottom">
 
-                Muscat · Oman
+                Global · Remote
                 &nbsp;•&nbsp;
                 <strong>Palmlight Media</strong>
 
@@ -1123,7 +1123,7 @@ export default function PalmLightMediaLanding() {
 
       <div className="plm3-location">
         <span className="plm3-live"></span>
-        MUSCAT, OMAN
+        GLOBAL · REMOTE
       </div>
 
 
@@ -2166,7 +2166,7 @@ export default function PalmLightMediaLanding() {
 
       <p className="plm-about-text">
 
-        Palmlight Media helps businesses in Muscat build
+        Palmlight Media helps businesses worldwide build
         a stronger digital presence through design, technology
         and marketing that actually works together.
 
@@ -2322,7 +2322,7 @@ export default function PalmLightMediaLanding() {
       <p className="plm-why-intro">
 
         We bring design, technology and marketing together
-        to help businesses in Muscat build a digital presence
+        to help businesses worldwide build a digital presence
         that gets noticed, remembered and trusted.
 
       </p>
@@ -2486,15 +2486,15 @@ export default function PalmLightMediaLanding() {
         <div className="plm-why-card-content">
 
           <h3>
-            MUSCAT
+            GLOBALLY
             <br />
             <span>FOCUSED.</span>
           </h3>
 
           <p>
-            We understand the local business environment
+            We understand modern international standards
             and build digital solutions for businesses
-            competing in Muscat.
+            competing worldwide.
           </p>
 
         </div>
@@ -3997,7 +3997,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudiomuscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudio/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
                         ↗
                     </a>
 
@@ -4061,11 +4061,11 @@ export default function PalmLightMediaLanding() {
 
                     <p className="plm-project-description">
                         Social media campaigns and digital
-                        content for a beauty studio in Muscat.
+                        content for a luxury beauty studio.
                     </p>
 
 
-                    <a className="plm-project-button" href="https://www.instagram.com/allurebeautystudiomuscat/" target="_blank" rel="noopener noreferrer">
+                    <a className="plm-project-button" href="https://www.instagram.com/allurebeautystudio/" target="_blank" rel="noopener noreferrer">
                         View Instagram
                         <span>↗</span>
                     </a>
@@ -4483,7 +4483,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808muscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
                         ↗
                     </a>
 
@@ -4547,7 +4547,7 @@ export default function PalmLightMediaLanding() {
                     </p>
 
 
-                    <a className="plm-project-button" href="https://www.instagram.com/klub808muscat/" target="_blank" rel="noopener noreferrer">
+                    <a className="plm-project-button" href="https://www.instagram.com/klub808/" target="_blank" rel="noopener noreferrer">
                         View Instagram
                         <span>↗</span>
                     </a>
@@ -5008,7 +5008,7 @@ export default function PalmLightMediaLanding() {
                             </span>
 
                             <span className="plm-faq-question-text">
-                                Do you work with businesses in Muscat?
+                                Do you work with global clients?
                             </span>
 
                         </span>
@@ -5025,10 +5025,10 @@ export default function PalmLightMediaLanding() {
 
                             <div className="plm-faq-answer-content">
 
-                                Yes. Palmlight Media focuses
-                                on helping businesses in Muscat
-                                build stronger brands, better
-                                websites and a more effective
+                                Yes. Palmlight Media works
+                                with businesses worldwide to
+                                build stronger brands, high-performing
+                                websites and a powerful
                                 digital presence.
 
                             </div>
@@ -5056,7 +5056,7 @@ export default function PalmLightMediaLanding() {
                             </span>
 
                             <span className="plm-faq-question-text">
-                                Do you work with international clients?
+                                How do you work with remote clients?
                             </span>
 
                         </span>
@@ -5073,11 +5073,10 @@ export default function PalmLightMediaLanding() {
 
                             <div className="plm-faq-answer-content">
 
-                                Yes. Although Muscat is our
-                                primary market, we also work
-                                with selected international
-                                clients depending on their
-                                project requirements.
+                                We operate with a fully remote and
+                                seamless digital workflow, allowing
+                                us to collaborate efficiently with
+                                clients anywhere in the world.
 
                             </div>
 
@@ -5702,11 +5701,11 @@ export default function PalmLightMediaLanding() {
                     <div className="plm-contact-detail-text">
 
                         <small>
-                            Address
+                            Location
                         </small>
 
                         <strong>
-                            Ghala, Muscat, Oman
+                            Global · Remote
                         </strong>
 
                     </div>
@@ -6024,7 +6023,7 @@ export default function PalmLightMediaLanding() {
 
                     <span>✦</span>
 
-                    Muscat, Oman • Serving businesses beyond
+                    Global · Remote Agency
 
                 </div>
 
@@ -6039,7 +6038,7 @@ export default function PalmLightMediaLanding() {
                         </svg>
                     </a>
 
-                    <a href="https://www.youtube.com/@Palmlightmediamuscat" target="_blank" rel="noopener noreferrer" className="plm-footer-social" aria-label="Subscribe to Palmlight Media on YouTube">
+                    <a href="https://www.youtube.com/@palmlightmedia" target="_blank" rel="noopener noreferrer" className="plm-footer-social" aria-label="Subscribe to Palmlight Media on YouTube">
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                         </svg>
