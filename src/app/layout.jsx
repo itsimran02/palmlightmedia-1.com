@@ -45,6 +45,9 @@ export const metadata = {
   title: 'Palmlight Media — Global Digital Agency',
   description: desc,
   metadataBase: new URL(url),
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

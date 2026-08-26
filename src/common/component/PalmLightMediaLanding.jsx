@@ -5804,7 +5804,7 @@ export default function PalmLightMediaLanding() {
                             Phone *
                         </label>
 
-                        <input type="tel" id="plm-phone" name="phone" placeholder="+968 XXXXXXXX" required="" />
+                        <input type="tel" id="plm-phone" name="phone" placeholder="+1 (555) 000-0000" required="" />
 
                     </div>
 
