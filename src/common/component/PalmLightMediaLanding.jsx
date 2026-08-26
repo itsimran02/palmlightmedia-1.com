@@ -1150,7 +1150,7 @@ export default function PalmLightMediaLanding() {
         Websites. Social media. Design. Video. Apps. Software.
         SEO. Paid Ads.
         <strong>
-          Everything your business needs to get seen,
+         &nbsp; Everything your business needs to get seen,
           chosen and remembered.
         </strong>
       </p>
