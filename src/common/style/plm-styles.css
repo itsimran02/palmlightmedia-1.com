@@ -1937,19 +1937,27 @@ html{
 ========================================================= */
 
 .plm3-proof {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 55px;
+}
 
-  display:
-    flex;
+.plm3-proof-number strong {
+  white-space: nowrap;
+}
 
-  align-items:
-    center;
-
-  gap:
-    22px;
-
-  margin-top:
-    55px;
-
+@media (max-width: 1050px) and (min-width: 651px) {
+  .plm3-proof {
+    gap: 10px;
+  }
+  .plm3-proof-number strong {
+    font-size: 18px;
+  }
+  .plm3-proof-number span {
+    font-size: 7px;
+  }
 }
 
 
@@ -3160,22 +3168,11 @@ html{
 /* Each identical group */
 
 .plm3-marquee-group {
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  flex-shrink:
-    0;
-
-  gap:
-    30px;
-
-  padding-right:
-    30px;
-
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 12px;
+  padding-right: 12px;
 }
 
 
