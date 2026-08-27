@@ -1060,11 +1060,11 @@ html{
 
   position: relative;
 
-  min-height: 900px;
+  min-height: auto;
 
   padding-top: 140px;
 
-  padding-bottom: 90px;
+  padding-bottom: 0;
 
   overflow: hidden;
 
@@ -3063,16 +3063,13 @@ html{
 .plm3-marquee {
 
   position:
-    absolute;
+    relative;
 
   z-index:
     10;
 
-  bottom:
-    0;
-
-  left:
-    0;
+  margin-top:
+    55px;
 
   width:
     100%;
@@ -3677,15 +3674,8 @@ html{
 
   overflow: hidden;
 
-  /*
-   * SECTION SPACING
-   * Desktop:
-   * Top = 110px
-   * Bottom = 120px
-   */
-
   padding:
-    110px 5% 120px;
+    45px 5% 120px;
 
   background:
     radial-gradient(
@@ -5374,7 +5364,7 @@ html{
   .plm-services {
 
     padding:
-      90px 5% 100px;
+      40px 5% 100px;
 
   }
 
@@ -5443,7 +5433,7 @@ html{
   .plm-services {
 
     padding:
-      80px 4.5% 90px;
+      35px 4.5% 90px;
 
   }
 
@@ -5547,7 +5537,7 @@ html{
   .plm-services {
 
     padding:
-      70px 20px 80px;
+      30px 20px 80px;
 
   }
 
