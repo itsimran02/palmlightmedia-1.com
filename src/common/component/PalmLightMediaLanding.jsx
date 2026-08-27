@@ -122,6 +122,7 @@ export default function PalmLightMediaLanding() {
             "vision",
             "portfolio",
             "pricing",
+            "team",
             "faq",
             "contact",
             "contact-us"
@@ -377,6 +378,7 @@ export default function PalmLightMediaLanding() {
 
 
             closeMenu();
+            setActive(id);
 
 
             const rect =
@@ -529,66 +531,59 @@ export default function PalmLightMediaLanding() {
 
             const marker =
                 navHeight() +
-                80;
+                25;
 
 
-            let current =
-                "home";
+            if (window.scrollY < 80) {
+
+                setActive("home");
+
+                return;
+
+            }
 
 
-            let bestDistance =
-                Infinity;
+            const totalHeight = document.documentElement.scrollHeight;
+
+            if ((window.innerHeight + window.scrollY) >= (totalHeight - 50)) {
+
+                setActive("contact");
+
+                return;
+
+            }
 
 
-            sectionIDs.forEach(
-                function(id){
-
-                    const section =
-                        getElement(id);
+            let current = "home";
 
 
-                    if(!section){
+            for (let i = 0; i < sectionIDs.length; i++) {
 
-                        return;
+                const id = sectionIDs[i];
 
-                    }
-
-
-                    const rect =
-                        section.getBoundingClientRect();
+                const section = getElement(id);
 
 
-                    if(
-                        rect.top <= marker
-                    ){
-
-                        const distance =
-                            Math.abs(
-                                marker -
-                                rect.top
-                            );
+                if (!section) continue;
 
 
-                        if(
-                            distance <
-                            bestDistance
-                        ){
+                const rect = section.getBoundingClientRect();
 
-                            bestDistance =
-                                distance;
 
-                            current =
-                                id;
+                if (rect.top <= marker) {
 
-                        }
-
-                    }
+                    current = id;
 
                 }
-            );
+
+            }
 
 
-            setActive(current);
+            if (current) {
+
+                setActive(current);
+
+            }
 
         }
 
@@ -1156,7 +1151,8 @@ export default function PalmLightMediaLanding() {
 
           <span>
             Businesses
-            served
+            <br />
+            Served
           </span>
 
         </div>
@@ -1173,7 +1169,8 @@ export default function PalmLightMediaLanding() {
 
           <span>
             Digital
-            services
+            <br />
+            Services
           </span>
 
         </div>
@@ -1189,8 +1186,9 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Goal 
-            your growth
+            Goal:
+            <br />
+            Your Growth
           </span>
 
         </div>
@@ -4775,7 +4773,103 @@ export default function PalmLightMediaLanding() {
 </section>
 
 
-<section className="plm-faq" id="faq">
+        {/* =========================================================
+             MEET OUR TEAM SECTION
+        ========================================================= */}
+        <section className="plm-team" id="team">
+
+            {/* BACKGROUND */}
+            <div className="plm-team-grid-bg"></div>
+            <div className="plm-team-orb"></div>
+
+            <div className="plm-team-container">
+
+                {/* HEADER */}
+                <div className="plm-team-header">
+                    <div className="plm-team-badge">
+                        OUR TEAM
+                    </div>
+
+                    <h2>
+                        Meet The Minds <span>Behind Palmlight Media.</span>
+                    </h2>
+
+                    <p>
+                        A dedicated team of growth strategists, full-stack developers, and e-commerce experts driving digital transformation.
+                    </p>
+                </div>
+
+                {/* TEAM GRID */}
+                <div className="plm-team-grid">
+
+                    {/* MEMBER 1 */}
+                    <div className="plm-team-card">
+                        <div className="plm-team-image-wrap">
+                            <img 
+                                src="/founder-new.jpeg" 
+                                alt="Shahnwaz Khan - Founder & Operation Manager" 
+                                className="plm-team-image"
+                                loading="lazy"
+                            />
+                            <div className="plm-team-card-overlay"></div>
+                        </div>
+
+                        <div className="plm-team-card-content">
+                            <h3 className="plm-team-name">Shahnwaz Khan</h3>
+                            <div className="plm-team-pill">
+                                Founder &amp; Operation Manager
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* MEMBER 2 */}
+                    <div className="plm-team-card">
+                        <div className="plm-team-image-wrap">
+                            <img 
+                                src="/imran.jpeg" 
+                                alt="Imran Sheikh - Full Stack Developer" 
+                                className="plm-team-image"
+                                loading="lazy"
+                            />
+                            <div className="plm-team-card-overlay"></div>
+                        </div>
+
+                        <div className="plm-team-card-content">
+                            <h3 className="plm-team-name">Imran Sheikh</h3>
+                            <div className="plm-team-pill">
+                                Full Stack Developer
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* MEMBER 3 */}
+                    <div className="plm-team-card">
+                        <div className="plm-team-image-wrap">
+                            <img 
+                                src="/gupta.jpeg" 
+                                alt="Rashmi Gupta - Shopify Developer & Social Media Manager" 
+                                className="plm-team-image"
+                                loading="lazy"
+                            />
+                            <div className="plm-team-card-overlay"></div>
+                        </div>
+
+                        <div className="plm-team-card-content">
+                            <h3 className="plm-team-name">Rashmi Gupta</h3>
+                            <div className="plm-team-pill">
+                                Shopify Developer &amp; Social Media Manager
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section className="plm-faq" id="faq">
 
 
     {/* BACKGROUND */}

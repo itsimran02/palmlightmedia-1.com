@@ -1938,10 +1938,11 @@ html{
 
 .plm3-proof {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
+  flex-wrap: nowrap !important;
   gap: 14px;
-  margin-top: 55px;
+  margin-top: 45px;
+  width: 100%;
 }
 
 .plm3-proof-number strong {
@@ -1962,64 +1963,39 @@ html{
 
 
 .plm3-proof-number {
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  gap:
-    10px;
-
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 
 .plm3-proof-number strong {
-
-  color:
-    #fff;
-
-  font-size:
-    22px;
-
-  font-weight:
-    800;
-
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 
 .plm3-proof-number span {
-
-  color:
-    #777581;
-
-  font-size:
-    8px;
-
-  line-height:
-    1.35;
-
-  text-transform:
-    uppercase;
-
-  letter-spacing:
-    .5px;
-
+  display: flex;
+  flex-direction: column;
+  color: #8e8c99;
+  font-size: 8.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  white-space: nowrap;
 }
 
 
 .plm3-proof-line {
-
-  width:
-    1px;
-
-  height:
-    32px;
-
-  background:
-    rgba(255,255,255,.12);
-
+  width: 1px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
 }
 
 
@@ -3434,37 +3410,31 @@ html{
 
 
   .plm3-proof {
-
-    gap:
-      14px;
-
-    margin-top:
-      35px;
-
+    gap: 10px;
+    margin-top: 35px;
+    flex-wrap: nowrap !important;
   }
 
 
   .plm3-proof-number {
-
-    gap:
-      6px;
-
+    gap: 5px;
+    flex-shrink: 0;
   }
 
 
   .plm3-proof-number strong {
-
-    font-size:
-      17px;
-
+    font-size: 16px;
   }
 
 
   .plm3-proof-number span {
+    display: inline-block !important;
+    font-size: 7px;
+    white-space: nowrap;
+  }
 
-    font-size:
-      6px;
-
+  .plm3-proof-number span br {
+    display: none !important;
   }
 
 
@@ -19455,6 +19425,255 @@ body{
     }
 
 }
+
+
+/* =========================================================
+   MEET OUR TEAM SECTION
+========================================================= */
+
+.plm-team {
+    position: relative;
+    width: 100%;
+    padding: 110px 20px 115px;
+    background: #0f1015;
+    color: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.plm-team * {
+    box-sizing: border-box;
+}
+
+.plm-team-grid-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: 
+        linear-gradient(rgba(139, 61, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 61, 255, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.plm-team-orb {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(139, 61, 255, 0.12) 0%, transparent 70%) !important;
+    pointer-events: none;
+}
+
+.plm-team-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.plm-team-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 65px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plm-team-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 18px;
+    border: 1px solid rgba(139, 61, 255, 0.45);
+    border-radius: 40px;
+    background: rgba(139, 61, 255, 0.08);
+    color: #caa6ff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.plm-team-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #8b3dff;
+    box-shadow: 0 0 12px #8b3dff;
+}
+
+.plm-team-header h2 {
+    margin: 0 0 16px 0;
+    font-size: clamp(36px, 4.8vw, 58px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.plm-team-header h2 span {
+    color: #caa6ff;
+    background: linear-gradient(135deg, #ffffff 20%, #caa6ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.plm-team-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 580px;
+}
+
+/* Cards Grid */
+.plm-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+/* Team Card */
+.plm-team-card {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #161720;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.plm-team-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(139, 61, 255, 0.55);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65), 0 0 35px rgba(139, 61, 255, 0.25);
+}
+
+/* Image Wrap & Hover */
+.plm-team-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    background: #181924;
+}
+
+.plm-team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.plm-team-card:hover .plm-team-image {
+    transform: scale(1.06);
+}
+
+/* Gradient overlay at card bottom for crisp text readability */
+.plm-team-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 16, 21, 0) 0%,
+        rgba(15, 16, 21, 0.05) 35%,
+        rgba(15, 16, 21, 0.7) 72%,
+        rgba(15, 16, 21, 0.96) 100%
+    );
+    pointer-events: none;
+}
+
+/* Card Content Floating at bottom */
+.plm-team-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 22px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.plm-team-name {
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.plm-team-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.plm-team-card:hover .plm-team-pill {
+    background: rgba(139, 61, 255, 0.3);
+    border-color: rgba(139, 61, 255, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(139, 61, 255, 0.35);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .plm-team-grid {
+        gap: 24px;
+    }
+    .plm-team-image-wrap {
+        height: 420px;
+    }
+}
+
+@media (max-width: 868px) {
+    .plm-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .plm-team {
+        padding: 75px 16px;
+    }
+    .plm-team-header h2 {
+        font-size: 36px;
+    }
+    .plm-team-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .plm-team-image-wrap {
+        height: 440px;
+    }
+}
+
 
 
 
