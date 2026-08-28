@@ -3323,10 +3323,10 @@ html{
       auto;
 
     padding-top:
-      110px;
+      100px;
 
     padding-bottom:
-      60px;
+      0 !important;
 
   }
 
@@ -3606,11 +3606,14 @@ html{
 
   .plm3-marquee {
 
+    margin-top:
+      25px;
+
     height:
-      54px;
+      50px;
 
     padding:
-      16px 0;
+      12px 0;
 
   }
 
