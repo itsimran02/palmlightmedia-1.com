@@ -19668,5 +19668,137 @@ body{
 }
 
 
+/* =========================================================
+   GLOBAL COUNTRY BADGES & PILLS
+========================================================= */
+
+.plm-country-tags,
+.plm-faq-country-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.plm-country-tags span,
+.plm-faq-country-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(139, 61, 255, 0.12);
+  border: 1px solid rgba(139, 61, 255, 0.35);
+  color: #e2d4ff;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+}
+
+.plm-country-tags span:hover,
+.plm-faq-country-tags span:hover {
+  background: rgba(139, 61, 255, 0.28);
+  border-color: rgba(139, 61, 255, 0.65);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 61, 255, 0.25);
+}
+
+
+/* =========================================================
+   CUSTOM SOLUTIONS SECTION STYLES
+========================================================= */
+
+.plm-custom-title {
+  margin: 20px 0 14px;
+  font-size: clamp(32px, 4.2vw, 54px);
+  line-height: 1.1;
+  font-weight: 800;
+  color: #1a1426;
+  letter-spacing: -1.5px;
+}
+
+.plm-custom-title span {
+  color: #7b2cbf;
+  background: linear-gradient(135deg, #7b2cbf 0%, #8b3dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plm-custom-subtitle {
+  margin: 0 auto 38px auto;
+  max-width: 650px;
+  color: #555060;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.plm-custom-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.plm-custom-feature-card {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(139, 61, 255, 0.18);
+  border-radius: 20px;
+  padding: 26px 22px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(139, 61, 255, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.plm-custom-feature-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(139, 61, 255, 0.45);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(139, 61, 255, 0.18);
+}
+
+.plm-custom-feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(139, 61, 255, 0.12);
+  border: 1px solid rgba(139, 61, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 15px rgba(139, 61, 255, 0.12);
+}
+
+.plm-custom-feature-card h4 {
+  margin: 0 0 8px 0;
+  color: #1c1527;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.plm-custom-feature-card p {
+  margin: 0;
+  color: #555060;
+  font-size: 13.5px;
+  line-height: 1.58;
+}
+
+@media (max-width: 868px) {
+  .plm-custom-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+
+
+
 
 

@@ -823,11 +823,6 @@ export default function PalmLightMediaLanding() {
             </a>
 
 
-            <a href="#pricing" className="plm-nav-link" data-section="pricing">
-                Pricing
-            </a>
-
-
             <a href="#contact" className="plm-nav-link" data-section="contact">
                 Contact
             </a>
@@ -977,23 +972,6 @@ export default function PalmLightMediaLanding() {
                     </small>
 
                     Portfolio
-                </span>
-
-                <span className="plm-mobile-arrow">
-                    →
-                </span>
-
-            </a>
-
-
-            <a href="#pricing" className="plm-mobile-link" data-section="pricing">
-
-                <span>
-                    <small className="plm-mobile-number">
-                        06
-                    </small>
-
-                    Pricing
                 </span>
 
                 <span className="plm-mobile-arrow">
@@ -2446,10 +2424,19 @@ export default function PalmLightMediaLanding() {
           </h3>
 
           <p>
-            We understand modern international standards
-            and build digital solutions for businesses
-            competing worldwide.
+            We understand modern international standards and build high-impact digital solutions for businesses competing worldwide—with proven experience across the <strong>USA, UK, Germany, Spain, Scotland, Turkey, Oman, and India</strong>.
           </p>
+
+          <div className="plm-country-tags">
+            <span>🇺🇸 USA</span>
+            <span>🇬🇧 UK</span>
+            <span>🇩🇪 Germany</span>
+            <span>🇪🇸 Spain</span>
+            <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span>
+            <span>🇹🇷 Turkey</span>
+            <span>🇴🇲 Oman</span>
+            <span>🇮🇳 India</span>
+          </div>
 
         </div>
 
@@ -4693,62 +4680,89 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-pricing-badge">
 
-            Pricing
+            TAILORED SOLUTIONS
 
         </div>
 
 
-        {/* KICKER */}
+        {/* HEADLINE */}
 
-        <div className="plm-pricing-kicker">
+        <h2 className="plm-custom-title">
 
-            Great digital work starts from
+            No Cookie-Cutter Packages. <br />
+            <span>100% Built Around Your Vision.</span>
 
-        </div>
-
-
-        {/* PRICE */}
-
-        <div className="plm-price-display">
+        </h2>
 
 
-            <div className="plm-currency">
+        <p className="plm-custom-subtitle">
 
-                OMR
+            Every business is unique. We engineer custom digital strategies, high-performance design, and scalable code tailored to your exact market and growth targets.
+
+        </p>
+
+
+        {/* 3 VALUE PILLARS */}
+
+        <div className="plm-custom-features">
+
+            <div className="plm-custom-feature-card">
+
+                <div className="plm-custom-feature-icon">
+                    🎯
+                </div>
+
+                <h4>Custom Strategy</h4>
+
+                <p>
+                    No rigid templates. We research your market and build strategy, design, and user flows specifically around your goals.
+                </p>
 
             </div>
 
 
-            <div className="plm-price-number">
+            <div className="plm-custom-feature-card">
 
-                49
+                <div className="plm-custom-feature-icon">
+                    ⚡
+                </div>
+
+                <h4>Transparent Execution</h4>
+
+                <p>
+                    Clear project milestones, dedicated developer communication, fast turnarounds, and complete code & design ownership.
+                </p>
 
             </div>
 
 
+            <div className="plm-custom-feature-card">
+
+                <div className="plm-custom-feature-icon">
+                    📈
+                </div>
+
+                <h4>Measurable ROI</h4>
+
+                <p>
+                    Built to attract qualified traffic, convert visitors into high-value leads, and scale your brand authority globally.
+                </p>
+
+            </div>
+
         </div>
 
 
-        {/* PURPLE LINE */}
+        {/* PURPLE ACCENT LINE */}
 
         <div className="plm-price-line"></div>
 
 
-        {/* SUBTITLE */}
-
-        <div className="plm-price-subtitle">
-
-            <strong>Starting from</strong>
-            · tailored to your business
-
-        </div>
-
-
         {/* CTA */}
 
-        <a href="https://wa.me/96875186675" target="_blank" rel="noopener noreferrer" className="plm-pricing-button">
+        <a href="https://wa.me/96875186675?text=Hello%20Palmlight%20Media%2C%20I%27d%20like%20to%20discuss%20a%20custom%20project%20estimate." target="_blank" rel="noopener noreferrer" className="plm-pricing-button">
 
-            Let's Discuss Your Project
+            Get A Free Custom Proposal
 
             <span className="plm-pricing-button-arrow">
                 →
@@ -4761,8 +4775,7 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-pricing-note">
 
-            No one-size-fits-all packages.
-            We build around what your business needs.
+            Speak directly with our technical team to explore scope and pricing options tailored to your budget.
 
         </div>
 
@@ -4901,7 +4914,7 @@ export default function PalmLightMediaLanding() {
 
                 <h2>
 
-                    Questions?
+                    Questions? &nbsp;
                     <span>We've got answers.</span>
 
                 </h2>
@@ -4958,7 +4971,7 @@ export default function PalmLightMediaLanding() {
                 <h3>
 
                     Let's make your
-                    <span>next move.</span>
+                   &nbsp; <span>next move.</span>
 
                 </h3>
 
@@ -5123,10 +5136,18 @@ export default function PalmLightMediaLanding() {
 
                             <div className="plm-faq-answer-content">
 
-                                We operate with a fully remote and
-                                seamless digital workflow, allowing
-                                us to collaborate efficiently with
-                                clients anywhere in the world.
+                                We operate with a fully remote and seamless digital workflow, enabling smooth collaboration across time zones. We have successfully delivered digital solutions for clients in the <strong>USA, UK, Germany, Spain, Scotland, Turkey, Oman, and India</strong>.
+
+                                <div className="plm-faq-country-tags">
+                                    <span>🇺🇸 USA</span>
+                                    <span>🇬🇧 UK</span>
+                                    <span>🇩🇪 Germany</span>
+                                    <span>🇪🇸 Spain</span>
+                                    <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span>
+                                    <span>🇹🇷 Turkey</span>
+                                    <span>🇴🇲 Oman</span>
+                                    <span>🇮🇳 India</span>
+                                </div>
 
                             </div>
 
