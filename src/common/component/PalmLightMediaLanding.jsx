@@ -3447,6 +3447,74 @@ export default function PalmLightMediaLanding() {
 
         </article>
 
+		  {/* SHAUN MOAT */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Meryem.jpeg" alt="Meryem Nour" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Meryem Nour
+                </strong>
+
+                <span>
+                  Self-Employed
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              06
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped me with my website setup
+              and SEO, and the experience was really good.
+              They were helpful, professional, and made sure
+              everything was done properly. I’m happy with the
+              final result. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
 
       </div>
 
