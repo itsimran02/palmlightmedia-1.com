@@ -3110,7 +3110,7 @@ export default function PalmLightMediaLanding() {
 
               <div className="plm-client-image">
 
-                <img decoding="async" src="/K2ZDRTNM5NO6UNP3YD55.jpg" alt="Shaun Moat" loading="lazy" />
+                <img decoding="async" src="/Ajay Rawani.png" alt="Ajay Rawani" loading="lazy" />
 
               </div>
 
@@ -3654,6 +3654,75 @@ export default function PalmLightMediaLanding() {
           </div>
 
         </article>
+        
+		{/* Ajay Rawani */}
+
+		  <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Ajay Rawani.png" alt="Ajay Rawani" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Ajay Rawani
+                </strong>
+
+                <span>
+                  Founder | Amigo ManPower
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              08
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped us establish a strong online presence for
+              Amigo Manpower. From designing our website to setting up our social
+              media presence, their team was professional, responsive, and
+              understood our needs perfectly. Highly recommended for reliable
+              digital solutions and support.
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
 
 
       </div>
