@@ -3127,7 +3127,7 @@ export default function PalmLightMediaLanding() {
                 </strong>
 
                 <span>
-                  Founder | SiteClencher
+                  Founder | Site Lawncher
                 </span>
 
               </div>
@@ -3474,7 +3474,7 @@ export default function PalmLightMediaLanding() {
                 </strong>
 
                 <span>
-                  Self-Employed
+                  Founder| Donut Pig
                 </span>
 
               </div>
@@ -3482,7 +3482,7 @@ export default function PalmLightMediaLanding() {
             </div>
 
             <div className="plm-card-index">
-              06
+              07
             </div>
 
           </div>
