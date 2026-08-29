@@ -6298,17 +6298,6 @@ export default function PalmLightMediaLanding() {
             </div>
 
 
-            <div className="plm-footer-bottom-links">
-
-                <a href="#">
-                    Privacy Policy
-                </a>
-
-                <a href="#">
-                    Terms &amp; Conditions
-                </a>
-
-            </div>
 
 
         </div>
