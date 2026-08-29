@@ -3463,14 +3463,14 @@ export default function PalmLightMediaLanding() {
 
               <div className="plm-client-image">
 
-                <img decoding="async" src="/Meryem.jpeg" alt="Meryem Nour" loading="lazy" />
+                <img decoding="async" src="/K2ZDRTNM5NO6UNP3YD55.jpg" alt="Shaun Moat" loading="lazy" />
 
               </div>
 
               <div className="plm-client-details">
 
                 <strong>
-                  Meryem Nour
+                  Shaun Moat
                 </strong>
 
                 <span>
@@ -3491,11 +3491,11 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Palmlight Media helped me with my website setup
-              and SEO, and the experience was really good.
-              They were helpful, professional, and made sure
-              everything was done properly. I’m happy with the
-              final result. Highly recommended!
+              Palmlight Media did an excellent job with my website and
+			  LMS setup. The entire process was smooth and professional.
+              Shahnwaz was supportive, responsive, and understood exactly
+              what I needed. Everything was completed perfectly. I’m
+              genuinely satisfied with the final outcome. Highly recommended!
 
             </p>
 
