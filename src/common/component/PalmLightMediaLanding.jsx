@@ -2772,7 +2772,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing gave my consulting practice a polished
+              Palmlight Media gave my consulting practice a polished
               website that builds trust with clients from the
               very first visit. The site is fast, professional,
               and clearly communicates the value I provide.
@@ -2852,7 +2852,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing helped me showcase my car repair
+              Palmlight Media helped me showcase my car repair
               services in a way that's easy for customers to
               find and understand. People in Austin can quickly
               contact me, and I've noticed more new customers
@@ -3003,6 +3003,76 @@ export default function PalmLightMediaLanding() {
               They were helpful, professional, and made sure
               everything was done properly. I’m happy with the
               final result. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+		  {/* =================================================
+             TESTIMONIAL 07 — SHAUN MOAT
+        ================================================== */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/K2ZDRTNM5NO6UNP3YD55.jpg" alt="Shaun Moat" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Shaun Moat
+                </strong>
+
+                <span>
+                  Founder | Donut Pig
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              06
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media did an excellent job with my website and
+              LMS setup. The entire process was smooth and professional.
+              Shahnwaz was supportive, responsive, and understood exactly
+              what I needed. Everything was completed perfectly. I’m
+              genuinely satisfied with the final outcome. Highly recommended!
 
             </p>
 
@@ -3214,7 +3284,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing gave my consulting practice a polished
+              Palmlight Media gave my consulting practice a polished
               website that builds trust with clients from the
               very first visit. The site is fast, professional,
               and clearly communicates the value I provide.
@@ -3284,7 +3354,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing helped me showcase my car repair
+              Palmlight Media helped me showcase my car repair
               services in a way that's easy for customers to
               find and understand. People in Austin can quickly
               contact me, and I've noticed more new customers
