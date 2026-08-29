@@ -2166,7 +2166,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-about-stat">
 
           <strong>
-            6<span>+</span>
+            8<span>+</span>
           </strong>
 
           <small>
@@ -3496,7 +3496,7 @@ export default function PalmLightMediaLanding() {
       <div className="plm-trust-item">
 
         <strong>
-          6<span>+</span>
+          8<span>+</span>
         </strong>
 
         <small>
