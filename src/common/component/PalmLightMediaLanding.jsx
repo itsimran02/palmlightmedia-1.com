@@ -3059,7 +3059,7 @@ export default function PalmLightMediaLanding() {
             </div>
 
             <div className="plm-card-index">
-              06
+              07
             </div>
 
           </div>
