@@ -1839,8 +1839,9 @@ export default function PalmLightMediaLanding() {
           </div>
 
           <h3>
-            Industrial
-            <em>Software</em>
+            Custom
+            <em>SAAS</em>
+			  Development
           </h3>
 
           <p>
