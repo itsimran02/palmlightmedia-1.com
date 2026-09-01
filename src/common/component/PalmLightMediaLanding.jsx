@@ -1839,8 +1839,8 @@ export default function PalmLightMediaLanding() {
           </div>
 
           <h3>
-            Industrial
-            <em>Software</em>
+            Custom
+            <em>SAAS</em>
           </h3>
 
           <p>
@@ -2166,7 +2166,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-about-stat">
 
           <strong>
-            6<span>+</span>
+            8<span>+</span>
           </strong>
 
           <small>
@@ -2772,7 +2772,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing gave my consulting practice a polished
+              Palmlight Media gave my consulting practice a polished
               website that builds trust with clients from the
               very first visit. The site is fast, professional,
               and clearly communicates the value I provide.
@@ -2852,7 +2852,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing helped me showcase my car repair
+              Palmlight Media helped me showcase my car repair
               services in a way that's easy for customers to
               find and understand. People in Austin can quickly
               contact me, and I've noticed more new customers
@@ -3022,6 +3022,146 @@ export default function PalmLightMediaLanding() {
 
         </article>
 
+		  {/* =================================================
+             TESTIMONIAL 07 — SHAUN MOAT
+        ================================================== */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/K2ZDRTNM5NO6UNP3YD55.jpg" alt="Shaun Moat" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Shaun Moat
+                </strong>
+
+                <span>
+                  Founder | Donut Pig
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              07
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media did an excellent job with my website and
+              LMS setup. The entire process was smooth and professional.
+              Shahnwaz was supportive, responsive, and understood exactly
+              what I needed. Everything was completed perfectly. I’m
+              genuinely satisfied with the final outcome. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+		  {/* =================================================
+             TESTIMONIAL 08 — Ajay Rawani
+        ================================================== */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Ajay Rawani.png" alt="Ajay Rawani" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Ajay Rawani
+                </strong>
+
+                <span>
+                  Founder | Amigo ManPower
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              08
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped us establish a strong online presence for
+              Amigo Manpower. From designing our website to setting up our social
+              media presence, their team was professional, responsive, and
+              understood our needs perfectly. Highly recommended for reliable
+              digital solutions and support.
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
 
 
         {/* =================================================
@@ -3127,7 +3267,7 @@ export default function PalmLightMediaLanding() {
                 </strong>
 
                 <span>
-                  Founder | SiteClencher
+                  Founder | Site Lawncher
                 </span>
 
               </div>
@@ -3214,7 +3354,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing gave my consulting practice a polished
+              Palmlight Media gave my consulting practice a polished
               website that builds trust with clients from the
               very first visit. The site is fast, professional,
               and clearly communicates the value I provide.
@@ -3284,7 +3424,7 @@ export default function PalmLightMediaLanding() {
 
             <p>
 
-              Freewebing helped me showcase my car repair
+              Palmlight Media helped me showcase my car repair
               services in a way that's easy for customers to
               find and understand. People in Austin can quickly
               contact me, and I've noticed more new customers
@@ -3447,6 +3587,143 @@ export default function PalmLightMediaLanding() {
 
         </article>
 
+		  {/* SHAUN MOAT */}
+
+        <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/K2ZDRTNM5NO6UNP3YD55.jpg" alt="Shaun Moat" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Shaun Moat
+                </strong>
+
+                <span>
+                  Founder| Donut Pig
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              07
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media did an excellent job with my website and
+			  LMS setup. The entire process was smooth and professional.
+              Shahnwaz was supportive, responsive, and understood exactly
+              what I needed. Everything was completed perfectly. I’m
+              genuinely satisfied with the final outcome. Highly recommended!
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+        
+		{/* Ajay Rawani */}
+
+		  <article className="plm-testimonial-card">
+
+          <div className="plm-card-glow"></div>
+
+          <div className="plm-card-quote">
+            “
+          </div>
+
+          <div className="plm-testimonial-top">
+
+            <div className="plm-client-profile">
+
+              <div className="plm-client-image">
+
+                <img decoding="async" src="/Ajay Rawani.png" alt="Ajay Rawani" loading="lazy" />
+
+              </div>
+
+              <div className="plm-client-details">
+
+                <strong>
+                  Ajay Rawani
+                </strong>
+
+                <span>
+                  Founder | Amigo ManPower
+                </span>
+
+              </div>
+
+            </div>
+
+            <div className="plm-card-index">
+              08
+            </div>
+
+          </div>
+
+          <div className="plm-card-content">
+
+            <p>
+
+              Palmlight Media helped us establish a strong online presence for
+              Amigo Manpower. From designing our website to setting up our social
+              media presence, their team was professional, responsive, and
+              understood our needs perfectly. Highly recommended for reliable
+              digital solutions and support.
+
+            </p>
+
+          </div>
+
+          <div className="plm-card-bottom">
+
+            <div className="plm-stars">
+              ★★★★★
+            </div>
+
+            <span>
+              CLIENT EXPERIENCE
+            </span>
+
+          </div>
+
+        </article>
+
+
 
       </div>
 
@@ -3496,7 +3773,7 @@ export default function PalmLightMediaLanding() {
       <div className="plm-trust-item">
 
         <strong>
-          6<span>+</span>
+          8<span>+</span>
         </strong>
 
         <small>
@@ -6026,17 +6303,6 @@ export default function PalmLightMediaLanding() {
             </div>
 
 
-            <div className="plm-footer-bottom-links">
-
-                <a href="#">
-                    Privacy Policy
-                </a>
-
-                <a href="#">
-                    Terms &amp; Conditions
-                </a>
-
-            </div>
 
 
         </div>
