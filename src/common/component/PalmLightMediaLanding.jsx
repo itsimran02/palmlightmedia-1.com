@@ -4329,47 +4329,131 @@ export default function PalmLightMediaLanding() {
 
         <div className="plm-custom-features">
 
+            {/* PILLAR 01 */}
             <div className="plm-custom-feature-card">
 
-                <div className="plm-custom-feature-icon">
-                    🎯
+                <div className="plm-custom-card-top">
+                    <span className="plm-custom-card-tag">01 / STRATEGY</span>
+                    <div className="plm-custom-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg>
+                    </div>
                 </div>
 
-                <h4>Custom Strategy</h4>
+                <h4>Bespoke Strategic Blueprint</h4>
 
                 <p>
-                    No rigid templates. We research your market and build strategy, design, and user flows specifically around your goals.
+                    Zero generic templates. We research your specific competitive landscape, consumer psychographics, and conversion funnels to architect a bespoke digital roadmap.
                 </p>
+
+                <ul className="plm-custom-card-list">
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>Market & Competitive Whitespace Audit</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>Custom High-Fidelity UX/UI Flows</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>Conversion-Engineered Architecture</span>
+                    </li>
+                </ul>
 
             </div>
 
 
+            {/* PILLAR 02 */}
             <div className="plm-custom-feature-card">
 
-                <div className="plm-custom-feature-icon">
-                    ⚡
+                <div className="plm-custom-card-top">
+                    <span className="plm-custom-card-tag">02 / VELOCITY</span>
+                    <div className="plm-custom-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
                 </div>
 
-                <h4>Transparent Execution</h4>
+                <h4>Agile High-Velocity Execution</h4>
 
                 <p>
-                    Clear project milestones, dedicated developer communication, fast turnarounds, and complete code & design ownership.
+                    Direct, frictionless developer communication with weekly production milestones, rapid sprint deliverables, and 100% full intellectual property and code ownership.
                 </p>
+
+                <ul className="plm-custom-card-list">
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>Direct Senior Developer Channel</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>Weekly Milestones & Live Staging</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>100% Full Code & Asset Ownership</span>
+                    </li>
+                </ul>
 
             </div>
 
 
+            {/* PILLAR 03 */}
             <div className="plm-custom-feature-card">
 
-                <div className="plm-custom-feature-icon">
-                    📈
+                <div className="plm-custom-card-top">
+                    <span className="plm-custom-card-tag">03 / PERFORMANCE</span>
+                    <div className="plm-custom-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                            <polyline points="16 7 22 7 22 13" />
+                        </svg>
+                    </div>
                 </div>
 
-                <h4>Measurable ROI</h4>
+                <h4>Measurable Growth & High ROI</h4>
 
                 <p>
-                    Built to attract qualified traffic, convert visitors into high-value leads, and scale your brand authority globally.
+                    Engineered to turn cold traffic into committed, paying clients. Blazing sub-second load times, deep technical SEO, and conversion tracking that proves ROI.
                 </p>
+
+                <ul className="plm-custom-card-list">
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>95+ Google PageSpeed Performance</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>High-Converting Lead Capture Funnels</span>
+                    </li>
+                    <li>
+                        <svg className="plm-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span>End-to-End Analytics & Tracking</span>
+                    </li>
+                </ul>
 
             </div>
 
@@ -4394,11 +4478,32 @@ export default function PalmLightMediaLanding() {
         </a>
 
 
-        {/* NOTE */}
+        {/* TRUST GUARANTEES */}
 
-        <div className="plm-pricing-note">
+        <div className="plm-pricing-guarantees">
 
-            Speak directly with our technical team to explore scope and pricing options tailored to your budget.
+            <div className="plm-guarantee-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Strict Non-Disclosure (NDA)</span>
+            </div>
+
+            <div className="plm-guarantee-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>24-Hour Scope & Estimate Turnaround</span>
+            </div>
+
+            <div className="plm-guarantee-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>Direct Senior Engineer & Founder Access</span>
+            </div>
 
         </div>
 
