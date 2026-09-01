@@ -4215,7 +4215,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudio/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudiomuscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
                         ↗
                     </a>
 
@@ -4701,7 +4701,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808muscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
                         ↗
                     </a>
 
