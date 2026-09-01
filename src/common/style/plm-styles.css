@@ -12277,18 +12277,6 @@ body{
     grid-column:span 5;
 }
 
-.plm-project:nth-child(7){
-    grid-column:span 5;
-}
-
-.plm-project:nth-child(8){
-    grid-column:span 7;
-}
-
-.plm-project:nth-child(9){
-    grid-column:span 12;
-}
-
 
 /* =========================================================
    CARD HOVER
@@ -12297,11 +12285,13 @@ body{
 .plm-project:hover{
 
     border-color:
-        rgba(168,85,247,.38);
+        rgba(168,85,247,.45);
 
     box-shadow:
-        0 35px 100px
-        rgba(0,0,0,.35);
+        0 30px 90px
+        rgba(0,0,0,.6),
+        0 0 50px
+        rgba(168,85,247,.15);
 
 }
 
@@ -12335,12 +12325,13 @@ body{
         transform .6s ease;
 
     pointer-events:none;
+    z-index:3;
 
 }
 
 .plm-project:hover::before{
 
-    opacity:.18;
+    opacity:.22;
 
     transform:scale(1.25);
 
@@ -12348,7 +12339,7 @@ body{
 
 
 /* =========================================================
-   PROJECT VISUAL
+   PROJECT VISUAL & IMAGES
 ========================================================= */
 
 .plm-project-visual{
@@ -12360,17 +12351,85 @@ body{
     overflow:hidden;
 
     background:
-
         radial-gradient(
             circle at 70% 25%,
             rgba(168,85,247,.24),
             transparent 30%
         ),
-
         linear-gradient(
             145deg,
-            #272039,
-            #171820 75%
+            #1e182e,
+            #0e0f17 75%
+        );
+
+}
+
+.plm-project-img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:top center;
+
+    transform:scale(1.001);
+
+    transition:
+        transform .75s
+        cubic-bezier(.16,1,.3,1),
+        filter .6s ease;
+
+    will-change:transform;
+
+}
+
+.plm-project:hover
+.plm-project-img{
+
+    transform:scale(1.07);
+
+    filter:brightness(1.08) contrast(1.04);
+
+}
+
+.plm-project-img-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,11,18,.15) 0%,
+            rgba(10,11,18,.45) 40%,
+            rgba(10,11,18,.88) 75%,
+            rgba(8,9,14,.98) 100%
+        );
+
+    pointer-events:none;
+
+    transition:
+        opacity .45s ease;
+
+}
+
+.plm-project:hover
+.plm-project-img-overlay{
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,11,18,.05) 0%,
+            rgba(10,11,18,.35) 40%,
+            rgba(10,11,18,.82) 75%,
+            rgba(8,9,14,.96) 100%
         );
 
 }
@@ -13142,13 +13201,6 @@ body{
 
         grid-column:
             span 6;
-
-    }
-
-    .plm-project:nth-child(9){
-
-        grid-column:
-            span 12;
 
     }
 

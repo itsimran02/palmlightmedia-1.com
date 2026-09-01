@@ -3720,11 +3720,14 @@ export default function PalmLightMediaLanding() {
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        SITELAWNCHER
-                    </div>
+                    <img
+                        src="/work5.jpeg"
+                        alt="Sitelawncher Lawn Care Web Design and Lead Generation"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -3732,7 +3735,7 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        01 / 09
+                        01 / 06
                     </span>
 
 
@@ -3745,50 +3748,31 @@ export default function PalmLightMediaLanding() {
 
                     <div className="plm-project-services">
 
-
-                        {/* Website */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <path d="M3 9h18"></path>
                                 <path d="M7 6.5h.01"></path>
                                 <path d="M10 6.5h.01"></path>
                             </svg>
-
                             Website
-
                         </span>
 
-
-                        {/* Branding */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3z"></path>
                             </svg>
-
                             Branding
-
                         </span>
 
-
-                        {/* Graphic Design */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <path d="M4 17l6-6 4 4 3-3 4 3"></path>
                                 <circle cx="8" cy="9" r="1.5"></circle>
                             </svg>
-
-                            Graphic Design
-
+                            SEO Setup
                         </span>
-
 
                     </div>
 
@@ -3799,8 +3783,7 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Complete brand identity and website
-                        designed to create a strong digital presence.
+                        High-converting lawn care web platform with CRM automation, local SEO setup, and lead funnels.
                     </p>
 
 
@@ -3823,11 +3806,14 @@ export default function PalmLightMediaLanding() {
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        FREEWEBING
-                    </div>
+                    <img
+                        src="/work4.jpeg"
+                        alt="Freewebing Modern Web Agency Platform"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -3835,7 +3821,7 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        02 / 09
+                        02 / 06
                     </span>
 
 
@@ -3846,48 +3832,29 @@ export default function PalmLightMediaLanding() {
 
                     <div className="plm-project-services">
 
-
-                        {/* Website */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <path d="M3 9h18"></path>
                             </svg>
-
                             Website
-
                         </span>
 
-
-                        {/* Branding */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3z"></path>
                             </svg>
-
                             Branding
-
                         </span>
 
-
-                        {/* Social Media */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <circle cx="17" cy="7" r="1"></circle>
                             </svg>
-
-                            Social Media
-
+                            Digital Growth
                         </span>
-
 
                     </div>
 
@@ -3898,8 +3865,7 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Agency branding, website development
-                        and digital marketing presence.
+                        Agency digital architecture, frictionless web design, and conversion-focused customer acquisition.
                     </p>
 
 
@@ -3915,18 +3881,21 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 03 — ALLURE
+                 03 — ALLURE BEAUTY STUDIO
             ================================================== */}
 
             <article className="plm-project">
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        ALLURE
-                    </div>
+                    <img
+                        src="/work3.jpeg"
+                        alt="Allure Beauty Studio Social Media and Brand Direction"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -3934,63 +3903,44 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        03 / 09
+                        03 / 06
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudio/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/allurebeautystudiomuscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allure Instagram">
                         ↗
                     </a>
 
 
                     <div className="plm-project-services">
 
-
-                        {/* Social Media */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <circle cx="17" cy="7" r="1"></circle>
                             </svg>
-
                             Social Media
-
                         </span>
 
-
-                        {/* Content */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <circle cx="8" cy="9" r="1.5"></circle>
                                 <path d="M4 17l5-5 4 4 2-2 5 4"></path>
                             </svg>
-
-                            Content
-
+                            Visual Content
                         </span>
 
-
-                        {/* Campaigns */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 3v18"></path>
                                 <path d="M3 12h18"></path>
                                 <path d="M5 5l14 14"></path>
                                 <path d="M19 5L5 19"></path>
                             </svg>
-
                             Campaigns
-
                         </span>
-
 
                     </div>
 
@@ -4001,12 +3951,11 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Social media campaigns and digital
-                        content for a luxury beauty studio.
+                        Luxury beauty salon branding, high-aesthetic social media curation, and premium visual campaigns.
                     </p>
 
 
-                    <a className="plm-project-button" href="https://www.instagram.com/allurebeautystudio/" target="_blank" rel="noopener noreferrer">
+                    <a className="plm-project-button" href="https://www.instagram.com/allurebeautystudiomuscat/" target="_blank" rel="noopener noreferrer">
                         View Instagram
                         <span>↗</span>
                     </a>
@@ -4018,18 +3967,21 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 04 — ADDISON
+                 04 — ADDISON CHIROPRACTIC
             ================================================== */}
 
             <article className="plm-project">
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        ADDISON
-                    </div>
+                    <img
+                        src="/work2.jpeg"
+                        alt="Addison Chiropractic Healthcare Social Media"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -4037,7 +3989,7 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        04 / 09
+                        04 / 06
                     </span>
 
 
@@ -4048,36 +4000,31 @@ export default function PalmLightMediaLanding() {
 
                     <div className="plm-project-services">
 
-
-                        {/* Social Media */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <circle cx="17" cy="7" r="1"></circle>
                             </svg>
-
                             Social Media
-
                         </span>
 
-
-                        {/* Content */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <circle cx="8" cy="9" r="1.5"></circle>
                                 <path d="M4 17l5-5 4 4 2-2 5 4"></path>
                             </svg>
-
-                            Content
-
+                            Healthcare Content
                         </span>
 
+                        <span className="plm-service">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 12h16"></path>
+                                <path d="M12 4l8 8-8 8"></path>
+                            </svg>
+                            Strategy
+                        </span>
 
                     </div>
 
@@ -4088,8 +4035,7 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Healthcare social media management
-                        and content strategy.
+                        Sports & rehab clinic social media management, patient education graphics, and brand positioning.
                     </p>
 
 
@@ -4105,18 +4051,21 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 05 — DOPEMAN
+                 05 — DOPEMAN MARKETING
             ================================================== */}
 
             <article className="plm-project">
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        DOPEMAN
-                    </div>
+                    <img
+                        src="/work6.jpeg"
+                        alt="Dopeman Marketing High Impact Brand and Landing Page"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -4124,7 +4073,7 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        05 / 09
+                        05 / 06
                     </span>
 
 
@@ -4135,61 +4084,36 @@ export default function PalmLightMediaLanding() {
 
                     <div className="plm-project-services">
 
-
-                        {/* Website */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="16" rx="2"></rect>
                                 <path d="M3 9h18"></path>
                             </svg>
-
                             Website
-
                         </span>
 
-
-                        {/* Branding */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3z"></path>
                             </svg>
-
                             Branding
-
                         </span>
 
-
-                        {/* Social */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
-
                             Social Media
-
                         </span>
 
-
-                        {/* Paid Ads */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M4 12h16"></path>
                                 <path d="M12 4l8 8-8 8"></path>
                             </svg>
-
                             Paid Ads
-
                         </span>
-
 
                     </div>
 
@@ -4200,8 +4124,7 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Marketing agency digital presence,
-                        branding and social media direction.
+                        Bold, edgy marketing agency digital presence, custom high-contrast landing page, and brand identity.
                     </p>
 
 
@@ -4217,18 +4140,21 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 06 — AUSTINS
+                 06 — KLUB808
             ================================================== */}
 
             <article className="plm-project">
 
                 <div className="plm-project-visual">
 
-                    <div className="plm-project-word">
-                        AUSTINS
-                    </div>
+                    <img
+                        src="/work1.jpeg"
+                        alt="Klub808 Nightclub Events Flyers and Social Media"
+                        className="plm-project-img"
+                        loading="lazy"
+                    />
 
-                    <div className="plm-project-shape"></div>
+                    <div className="plm-project-img-overlay"></div>
 
                 </div>
 
@@ -4236,243 +4162,40 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-overlay">
 
                     <span className="plm-project-number">
-                        06 / 09
+                        06 / 06
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://austinscollision.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Austins Collision">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808muscat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
                         ↗
                     </a>
 
 
                     <div className="plm-project-services">
 
-
-                        {/* Website */}
-
                         <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                                <path d="M3 9h18"></path>
-                            </svg>
-
-                            Website
-
-                        </span>
-
-
-                        {/* Social */}
-
-                        <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
-
                             Social Media
-
                         </span>
 
-
-                    </div>
-
-
-                    <h3 className="plm-project-title">
-                        Austins' Collision
-                    </h3>
-
-
-                    <p className="plm-project-description">
-                        Collision shop website and social
-                        media management.
-                    </p>
-
-
-                    <a className="plm-project-button" href="https://austinscollision.com/" target="_blank" rel="noopener noreferrer">
-                        Visit Website
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            {/* =================================================
-                 07 — MERICA GC
-            ================================================== */}
-
-            <article className="plm-project">
-
-                <div className="plm-project-visual">
-
-                    <div className="plm-project-word">
-                        MERICA
-                    </div>
-
-                    <div className="plm-project-shape"></div>
-
-                </div>
-
-
-                <div className="plm-project-overlay">
-
-                    <span className="plm-project-number">
-                        07 / 09
-                    </span>
-
-
-                    <a className="plm-project-arrow" href="https://mericagc.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Merica General Contractor">
-                        ↗
-                    </a>
-
-
-                    <div className="plm-project-services">
-
-
-                        {/* Website */}
-
                         <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                                <path d="M3 9h18"></path>
-                            </svg>
-
-                            Website
-
-                        </span>
-
-
-                        {/* Social */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="5" y="5" width="14" height="14" rx="4"></rect>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-
-                            Social Media
-
-                        </span>
-
-
-                        {/* SEO */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="10.5" cy="10.5" r="6"></circle>
-                                <path d="M15 15l5 5"></path>
-                            </svg>
-
-                            SEO
-
-                        </span>
-
-
-                    </div>
-
-
-                    <h3 className="plm-project-title">
-                        Merica General Contractor
-                    </h3>
-
-
-                    <p className="plm-project-description">
-                        Construction website and social
-                        media campaigns.
-                    </p>
-
-
-                    <a className="plm-project-button" href="https://mericagc.com/" target="_blank" rel="noopener noreferrer">
-                        Visit Website
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            {/* =================================================
-                 08 — KLUB808
-            ================================================== */}
-
-            <article className="plm-project">
-
-                <div className="plm-project-visual">
-
-                    <div className="plm-project-word">
-                        KLUB808
-                    </div>
-
-                    <div className="plm-project-shape"></div>
-
-                </div>
-
-
-                <div className="plm-project-overlay">
-
-                    <span className="plm-project-number">
-                        08 / 09
-                    </span>
-
-
-                    <a className="plm-project-arrow" href="https://www.instagram.com/klub808/" target="_blank" rel="noopener noreferrer" aria-label="Visit Klub808 Instagram">
-                        ↗
-                    </a>
-
-
-                    <div className="plm-project-services">
-
-
-                        {/* Social */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="5" y="5" width="14" height="14" rx="4"></rect>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-
-                            Social Media
-
-                        </span>
-
-
-                        {/* Video */}
-
-                        <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="6" width="18" height="12" rx="2"></rect>
                                 <path d="M10 9l5 3-5 3V9z"></path>
                             </svg>
-
-                            Video
-
+                            Flyer Design
                         </span>
 
-
-                        {/* Paid Ads */}
-
                         <span className="plm-service">
-
                             <svg viewBox="0 0 24 24">
                                 <path d="M4 12h16"></path>
                                 <path d="M12 4l8 8-8 8"></path>
                             </svg>
-
-                            Paid Ads
-
+                            Promotions
                         </span>
-
 
                     </div>
 
@@ -4483,111 +4206,11 @@ export default function PalmLightMediaLanding() {
 
 
                     <p className="plm-project-description">
-                        Nightlife promotions, campaigns,
-                        creative content and social media.
+                        Nightlife entertainment branding, event promo campaigns, DJ flyers, and viral social media marketing.
                     </p>
 
 
-                    <a className="plm-project-button" href="https://www.instagram.com/klub808/" target="_blank" rel="noopener noreferrer">
-                        View Instagram
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            {/* =================================================
-                 09 — 808 LOUNGE
-            ================================================== */}
-
-            <article className="plm-project">
-
-                <div className="plm-project-visual">
-
-                    <div className="plm-project-word">
-                        808
-                    </div>
-
-                    <div className="plm-project-shape"></div>
-
-                </div>
-
-
-                <div className="plm-project-overlay">
-
-                    <span className="plm-project-number">
-                        09 / 09
-                    </span>
-
-
-                    <a className="plm-project-arrow" href="https://www.instagram.com/lounge_808/" target="_blank" rel="noopener noreferrer" aria-label="Visit 808 Lounge Instagram">
-                        ↗
-                    </a>
-
-
-                    <div className="plm-project-services">
-
-
-                        {/* Social */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="5" y="5" width="14" height="14" rx="4"></rect>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-
-                            Social Media
-
-                        </span>
-
-
-                        {/* Video */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-                                <path d="M10 9l5 3-5 3V9z"></path>
-                            </svg>
-
-                            Video
-
-                        </span>
-
-
-                        {/* Paid Ads */}
-
-                        <span className="plm-service">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M4 12h16"></path>
-                                <path d="M12 4l8 8-8 8"></path>
-                            </svg>
-
-                            Paid Ads
-
-                        </span>
-
-
-                    </div>
-
-
-                    <h3 className="plm-project-title">
-                        808 Lounge
-                    </h3>
-
-
-                    <p className="plm-project-description">
-                        Restaurant and lounge social media,
-                        promotions and digital content.
-                    </p>
-
-
-                    <a className="plm-project-button" href="https://www.instagram.com/lounge_808/" target="_blank" rel="noopener noreferrer">
+                    <a className="plm-project-button" href="https://www.instagram.com/klub808muscat/" target="_blank" rel="noopener noreferrer">
                         View Instagram
                         <span>↗</span>
                     </a>
