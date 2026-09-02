@@ -1124,11 +1124,11 @@ export default function PalmLightMediaLanding() {
         <div className="plm3-proof-number">
 
           <strong>
-            50+
+            80+
           </strong>
 
           <span>
-            Businesses
+            Businesses 
             <br />
             Served
           </span>
@@ -1146,7 +1146,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Digital
+            Digital 
             <br />
             Services
           </span>
@@ -2138,7 +2138,7 @@ export default function PalmLightMediaLanding() {
         <div className="plm-about-stat">
 
           <strong>
-            78<span>+</span>
+            80<span>+</span>
           </strong>
 
           <small>
