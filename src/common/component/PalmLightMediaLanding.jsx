@@ -14,12 +14,6 @@ export default function PalmLightMediaLanding() {
     message: ""
   });
 
-  const [teamSlide, setTeamSlide] = useState(0);
-  const [slidesToShow, setSlidesToShow] = useState(3);
-  const [isTeamHovered, setIsTeamHovered] = useState(false);
-  const [touchStartX, setTouchStartX] = useState(null);
-  const [touchEndX, setTouchEndX] = useState(null);
-
   const teamMembers = [
     {
       name: "Shahnwaz Khan",
@@ -42,65 +36,6 @@ export default function PalmLightMediaLanding() {
       image: "/Shigraf Salik.jpeg"
     }
   ];
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (typeof window === "undefined") return;
-      if (window.innerWidth < 640) {
-        setSlidesToShow(1);
-      } else if (window.innerWidth < 1024) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(3);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const maxTeamSlide = Math.max(0, teamMembers.length - slidesToShow);
-
-  useEffect(() => {
-    if (teamSlide > maxTeamSlide) {
-      setTeamSlide(maxTeamSlide);
-    }
-  }, [slidesToShow, maxTeamSlide, teamSlide]);
-
-  useEffect(() => {
-    if (isTeamHovered || maxTeamSlide === 0) return;
-    const interval = setInterval(() => {
-      setTeamSlide((prev) => (prev >= maxTeamSlide ? 0 : prev + 1));
-    }, 4500);
-    return () => clearInterval(interval);
-  }, [isTeamHovered, maxTeamSlide]);
-
-  const nextTeamSlide = () => {
-    setTeamSlide((prev) => (prev >= maxTeamSlide ? 0 : prev + 1));
-  };
-
-  const prevTeamSlide = () => {
-    setTeamSlide((prev) => (prev <= 0 ? maxTeamSlide : prev - 1));
-  };
-
-  const handleTouchStart = (e) => {
-    setTouchEndX(null);
-    setTouchStartX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEndX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (!touchStartX || !touchEndX) return;
-    const distance = touchStartX - touchEndX;
-    if (distance > 45) {
-      nextTeamSlide();
-    } else if (distance < -45) {
-      prevTeamSlide();
-    }
-  };
 
   const toggleFaq = (index) => {
     setActiveFaq(prev => prev === index ? -1 : index);
@@ -4890,7 +4825,7 @@ export default function PalmLightMediaLanding() {
 
             <div className="plm-team-container">
 
-                {/* HEADER & TOP CONTROLS */}
+                {/* HEADER */}
                 <div className="plm-team-header-wrapper">
                     <div className="plm-team-header">
                         <div className="plm-team-badge">
@@ -4905,91 +4840,94 @@ export default function PalmLightMediaLanding() {
                             A dedicated team of growth strategists, full-stack developers, mobile engineers, and e-commerce experts driving digital transformation.
                         </p>
                     </div>
-
-                    <div className="plm-team-header-actions">
-                        <div className="plm-team-nav-buttons">
-                            <button
-                                type="button"
-                                className="plm-team-nav-btn"
-                                onClick={prevTeamSlide}
-                                aria-label="Previous Team Member"
-                            >
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <polyline points="15 18 9 12 15 6"></polyline>
-                                </svg>
-                            </button>
-                            <button
-                                type="button"
-                                className="plm-team-nav-btn"
-                                onClick={nextTeamSlide}
-                                aria-label="Next Team Member"
-                            >
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
                 </div>
 
-                {/* SLIDER VIEWPORT & TRACK */}
-                <div 
-                    className="plm-team-slider-viewport"
-                    onMouseEnter={() => setIsTeamHovered(true)}
-                    onMouseLeave={() => setIsTeamHovered(false)}
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                >
-                    <div 
-                        className="plm-team-track"
-                        style={{
-                            transform: `translateX(calc(-${teamSlide} * (100% + ${slidesToShow === 1 ? 16 : slidesToShow === 2 ? 24 : 32}px) / ${slidesToShow}))`
-                        }}
-                    >
+                {/* CONTINUOUS AUTO SCROLLING MARQUEE */}
+                <div className="plm-team-marquee">
+                    <div className="plm-team-track">
+                        {/* FIRST SET */}
                         {teamMembers.map((member, idx) => (
-                            <div className="plm-team-slide" key={idx}>
-                                <div className="plm-team-card">
-                                    <div className="plm-team-image-wrap">
-                                        <img 
-                                            src={member.image} 
-                                            alt={`${member.name} - ${member.role}`} 
-                                            className="plm-team-image"
-                                            loading="lazy"
-                                        />
-                                        <div className="plm-team-card-overlay"></div>
-                                    </div>
+                            <article className="plm-team-card" key={`team-1-${idx}`}>
+                                <div className="plm-team-image-wrap">
+                                    <img 
+                                        src={member.image} 
+                                        alt={`${member.name} - ${member.role}`} 
+                                        className="plm-team-image"
+                                        loading="lazy"
+                                    />
+                                    <div className="plm-team-card-overlay"></div>
+                                </div>
 
-                                    <div className="plm-team-card-content">
-                                        <h3 className="plm-team-name">{member.name}</h3>
-                                        <div className="plm-team-pill">
-                                            {member.role}
-                                        </div>
+                                <div className="plm-team-card-content">
+                                    <h3 className="plm-team-name">{member.name}</h3>
+                                    <div className="plm-team-pill">
+                                        {member.role}
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         ))}
-                    </div>
-                </div>
+                        {teamMembers.map((member, idx) => (
+                            <article className="plm-team-card" key={`team-2-${idx}`}>
+                                <div className="plm-team-image-wrap">
+                                    <img 
+                                        src={member.image} 
+                                        alt={`${member.name} - ${member.role}`} 
+                                        className="plm-team-image"
+                                        loading="lazy"
+                                    />
+                                    <div className="plm-team-card-overlay"></div>
+                                </div>
 
-                {/* BOTTOM CONTROLS & PAGINATION */}
-                <div className="plm-team-controls-row">
-                    <div className="plm-team-pagination">
-                        {Array.from({ length: maxTeamSlide + 1 }).map((_, dotIdx) => (
-                            <button
-                                key={dotIdx}
-                                type="button"
-                                className={`plm-team-dot ${teamSlide === dotIdx ? "active" : ""}`}
-                                onClick={() => setTeamSlide(dotIdx)}
-                                aria-label={`Go to slide ${dotIdx + 1}`}
-                            />
+                                <div className="plm-team-card-content">
+                                    <h3 className="plm-team-name">{member.name}</h3>
+                                    <div className="plm-team-pill">
+                                        {member.role}
+                                    </div>
+                                </div>
+                            </article>
                         ))}
-                    </div>
 
-                    <div className="plm-team-slide-counter">
-                        <span className="current">{String(teamSlide + 1).padStart(2, "0")}</span>
-                        <span className="divider">/</span>
-                        <span className="total">{String(maxTeamSlide + 1).padStart(2, "0")}</span>
+                        {/* DUPLICATE SET FOR SEAMLESS 50% LOOP */}
+                        {teamMembers.map((member, idx) => (
+                            <article className="plm-team-card" key={`team-dup-1-${idx}`}>
+                                <div className="plm-team-image-wrap">
+                                    <img 
+                                        src={member.image} 
+                                        alt={`${member.name} - ${member.role}`} 
+                                        className="plm-team-image"
+                                        loading="lazy"
+                                    />
+                                    <div className="plm-team-card-overlay"></div>
+                                </div>
+
+                                <div className="plm-team-card-content">
+                                    <h3 className="plm-team-name">{member.name}</h3>
+                                    <div className="plm-team-pill">
+                                        {member.role}
+                                    </div>
+                                </div>
+                            </article>
+                        ))}
+                        {teamMembers.map((member, idx) => (
+                            <article className="plm-team-card" key={`team-dup-2-${idx}`}>
+                                <div className="plm-team-image-wrap">
+                                    <img 
+                                        src={member.image} 
+                                        alt={`${member.name} - ${member.role}`} 
+                                        className="plm-team-image"
+                                        loading="lazy"
+                                    />
+                                    <div className="plm-team-card-overlay"></div>
+                                </div>
+
+                                <div className="plm-team-card-content">
+                                    <h3 className="plm-team-name">{member.name}</h3>
+                                    <div className="plm-team-pill">
+                                        {member.role}
+                                    </div>
+                                </div>
+                            </article>
+                        ))}
                     </div>
                 </div>
 
