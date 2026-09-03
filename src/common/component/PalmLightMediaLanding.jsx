@@ -4076,7 +4076,7 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 02 — FREEWEBING
+                 02 — ADDISON CHIROPRACTIC
             ================================================== */}
 
             <article className="plm-project">
@@ -4084,8 +4084,8 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-visual">
 
                     <img
-                        src="/work4.jpeg"
-                        alt="Freewebing Modern Web Agency Platform"
+                        src="/work2.jpeg"
+                        alt="Addison Chiropractic Healthcare Social Media"
                         className="plm-project-img"
                         loading="lazy"
                     />
@@ -4102,7 +4102,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://freewebing.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Freewebing">
+                    <a className="plm-project-arrow" href="https://www.instagram.com/addisonchiroandsportsclinic/" target="_blank" rel="noopener noreferrer" aria-label="Visit Addison Instagram">
                         ↗
                     </a>
 
@@ -4111,43 +4111,45 @@ export default function PalmLightMediaLanding() {
 
                         <span className="plm-service">
                             <svg viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                                <path d="M3 9h18"></path>
-                            </svg>
-                            Website
-                        </span>
-
-                        <span className="plm-service">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3z"></path>
-                            </svg>
-                            Branding
-                        </span>
-
-                        <span className="plm-service">
-                            <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <circle cx="17" cy="7" r="1"></circle>
                             </svg>
-                            Digital Growth
+                            Social Media
+                        </span>
+
+                        <span className="plm-service">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                                <circle cx="8" cy="9" r="1.5"></circle>
+                                <path d="M4 17l5-5 4 4 2-2 5 4"></path>
+                            </svg>
+                            Healthcare Content
+                        </span>
+
+                        <span className="plm-service">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 12h16"></path>
+                                <path d="M12 4l8 8-8 8"></path>
+                            </svg>
+                            Strategy
                         </span>
 
                     </div>
 
 
                     <h3 className="plm-project-title">
-                        Freewebing
+                        Addison Chiropractic
                     </h3>
 
 
                     <p className="plm-project-description">
-                        Agency digital architecture, frictionless web design, and conversion-focused customer acquisition.
+                        Sports & rehab clinic social media management, patient education graphics, and brand positioning.
                     </p>
 
 
-                    <a className="plm-project-button" href="https://freewebing.com/" target="_blank" rel="noopener noreferrer">
-                        Visit Website
+                    <a className="plm-project-button" href="https://www.instagram.com/addisonchiroandsportsclinic/" target="_blank" rel="noopener noreferrer">
+                        View Instagram
                         <span>↗</span>
                     </a>
 
@@ -4244,7 +4246,7 @@ export default function PalmLightMediaLanding() {
 
 
             {/* =================================================
-                 04 — ADDISON CHIROPRACTIC
+                 04 — FREEWEBING
             ================================================== */}
 
             <article className="plm-project">
@@ -4252,8 +4254,8 @@ export default function PalmLightMediaLanding() {
                 <div className="plm-project-visual">
 
                     <img
-                        src="/work2.jpeg"
-                        alt="Addison Chiropractic Healthcare Social Media"
+                        src="/work4.jpeg"
+                        alt="Freewebing Modern Web Agency Platform"
                         className="plm-project-img"
                         loading="lazy"
                     />
@@ -4270,7 +4272,7 @@ export default function PalmLightMediaLanding() {
                     </span>
 
 
-                    <a className="plm-project-arrow" href="https://www.instagram.com/addisonchiroandsportsclinic/" target="_blank" rel="noopener noreferrer" aria-label="Visit Addison Instagram">
+                    <a className="plm-project-arrow" href="https://freewebing.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Freewebing">
                         ↗
                     </a>
 
@@ -4279,45 +4281,43 @@ export default function PalmLightMediaLanding() {
 
                         <span className="plm-service">
                             <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                                <path d="M3 9h18"></path>
+                            </svg>
+                            Website
+                        </span>
+
+                        <span className="plm-service">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3z"></path>
+                            </svg>
+                            Branding
+                        </span>
+
+                        <span className="plm-service">
+                            <svg viewBox="0 0 24 24">
                                 <rect x="5" y="5" width="14" height="14" rx="4"></rect>
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <circle cx="17" cy="7" r="1"></circle>
                             </svg>
-                            Social Media
-                        </span>
-
-                        <span className="plm-service">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                                <circle cx="8" cy="9" r="1.5"></circle>
-                                <path d="M4 17l5-5 4 4 2-2 5 4"></path>
-                            </svg>
-                            Healthcare Content
-                        </span>
-
-                        <span className="plm-service">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M4 12h16"></path>
-                                <path d="M12 4l8 8-8 8"></path>
-                            </svg>
-                            Strategy
+                            Digital Growth
                         </span>
 
                     </div>
 
 
                     <h3 className="plm-project-title">
-                        Addison Chiropractic
+                        Freewebing
                     </h3>
 
 
                     <p className="plm-project-description">
-                        Sports & rehab clinic social media management, patient education graphics, and brand positioning.
+                        Agency digital architecture, frictionless web design, and conversion-focused customer acquisition.
                     </p>
 
 
-                    <a className="plm-project-button" href="https://www.instagram.com/addisonchiroandsportsclinic/" target="_blank" rel="noopener noreferrer">
-                        View Instagram
+                    <a className="plm-project-button" href="https://freewebing.com/" target="_blank" rel="noopener noreferrer">
+                        Visit Website
                         <span>↗</span>
                     </a>
 
