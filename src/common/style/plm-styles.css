@@ -19473,13 +19473,13 @@ body{
 
 
 /* =========================================================
-   MEET OUR TEAM SECTION (SCROLLING MARQUEE)
+   MEET OUR TEAM SECTION (STATIC 4-COLUMN GRID)
 ========================================================= */
 
 .plm-team {
     position: relative;
     width: 100%;
-    padding: 110px 0 115px;
+    padding: 100px 0 115px;
     background: #0f1015;
     color: #ffffff;
     overflow: hidden;
@@ -19514,14 +19514,14 @@ body{
 .plm-team-container {
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: min(92%, 1360px);
     margin: 0 auto;
 }
 
 /* Header Wrapper */
 .plm-team-header-wrapper {
-    width: min(90%, 1200px);
-    margin: 0 auto 50px auto;
+    width: 100%;
+    margin: 0 0 45px 0;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -19585,35 +19585,20 @@ body{
     max-width: 580px;
 }
 
-/* Team Marquee & Track */
-.plm-team-marquee {
-    position: relative;
+/* Team Grid - All 4 in 1 Line */
+.plm-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     width: 100%;
-    overflow: hidden;
-    padding: 10px 0 25px;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-}
-
-.plm-team-track {
-    display: flex;
-    width: max-content;
-    gap: 28px;
-    padding: 15px 0 25px;
-    animation: smoothTeamMarquee 32s linear infinite;
-    will-change: transform;
-}
-
-.plm-team-marquee:hover .plm-team-track {
-    animation-play-state: paused;
 }
 
 /* Team Card */
 .plm-team-card {
     position: relative;
-    width: 320px;
-    min-width: 320px;
-    border-radius: 28px;
+    width: 100%;
+    min-width: 0;
+    border-radius: 24px;
     overflow: hidden;
     background: #161720;
     border: 1px solid rgba(255, 255, 255, 0.09);
@@ -19621,7 +19606,6 @@ body{
     display: flex;
     flex-direction: column;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    flex-shrink: 0;
 }
 
 .plm-team-card:hover {
@@ -19634,7 +19618,7 @@ body{
 .plm-team-image-wrap {
     position: relative;
     width: 100%;
-    height: 440px;
+    height: 420px;
     overflow: hidden;
     background: #181924;
 }
@@ -19649,7 +19633,7 @@ body{
 }
 
 .plm-team-card:hover .plm-team-image {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 /* Gradient overlay at card bottom */
@@ -19672,36 +19656,38 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 24px 22px;
+    padding: 22px 18px;
     z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
 }
 
 .plm-team-name {
     margin: 0;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    line-height: 1.25;
 }
 
 .plm-team-pill {
     display: inline-flex;
     align-items: center;
-    padding: 7px 16px;
+    padding: 6px 14px;
     border-radius: 9999px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.28);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     color: rgba(255, 255, 255, 0.95);
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 500;
     letter-spacing: 0.2px;
+    line-height: 1.3;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -19713,48 +19699,36 @@ body{
     box-shadow: 0 0 15px rgba(139, 61, 255, 0.35);
 }
 
-@keyframes smoothTeamMarquee {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-50%, 0, 0);
-    }
-}
-
 /* Responsive Breakpoints */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
+    .plm-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
     .plm-team-image-wrap {
-        height: 400px;
-    }
-    .plm-team-card {
-        width: 300px;
-        min-width: 300px;
-    }
-    .plm-team-header-wrapper {
-        margin-bottom: 40px;
+        height: 380px;
     }
 }
 
 @media (max-width: 640px) {
     .plm-team {
-        padding: 75px 0;
+        padding: 70px 0;
+    }
+    .plm-team-container {
+        width: 90%;
     }
     .plm-team-header-wrapper {
-        padding: 0 20px;
+        margin-bottom: 30px;
     }
     .plm-team-header h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
-    .plm-team-card {
-        width: 270px;
-        min-width: 270px;
-    }
-    .plm-team-track {
-        gap: 16px;
+    .plm-team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     .plm-team-image-wrap {
-        height: 370px;
+        height: 390px;
     }
 }
 

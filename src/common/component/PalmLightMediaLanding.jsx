@@ -4815,7 +4815,7 @@ export default function PalmLightMediaLanding() {
 
 
         {/* =========================================================
-             MEET OUR TEAM SECTION (INTERACTIVE SLIDER)
+             MEET OUR TEAM SECTION (STATIC 4-COLUMN GRID)
         ========================================================= */}
         <section className="plm-team" id="team">
 
@@ -4842,93 +4842,28 @@ export default function PalmLightMediaLanding() {
                     </div>
                 </div>
 
-                {/* CONTINUOUS AUTO SCROLLING MARQUEE */}
-                <div className="plm-team-marquee">
-                    <div className="plm-team-track">
-                        {/* FIRST SET */}
-                        {teamMembers.map((member, idx) => (
-                            <article className="plm-team-card" key={`team-1-${idx}`}>
-                                <div className="plm-team-image-wrap">
-                                    <img 
-                                        src={member.image} 
-                                        alt={`${member.name} - ${member.role}`} 
-                                        className="plm-team-image"
-                                        loading="lazy"
-                                    />
-                                    <div className="plm-team-card-overlay"></div>
-                                </div>
+                {/* ALL 4 MEMBERS IN 1 LINE (STATIC GRID, NO ANIMATION) */}
+                <div className="plm-team-grid">
+                    {teamMembers.map((member, idx) => (
+                        <article className="plm-team-card" key={`team-member-${idx}`}>
+                            <div className="plm-team-image-wrap">
+                                <img 
+                                    src={member.image} 
+                                    alt={`${member.name} - ${member.role}`} 
+                                    className="plm-team-image"
+                                    loading="lazy"
+                                />
+                                <div className="plm-team-card-overlay"></div>
+                            </div>
 
-                                <div className="plm-team-card-content">
-                                    <h3 className="plm-team-name">{member.name}</h3>
-                                    <div className="plm-team-pill">
-                                        {member.role}
-                                    </div>
+                            <div className="plm-team-card-content">
+                                <h3 className="plm-team-name">{member.name}</h3>
+                                <div className="plm-team-pill">
+                                    {member.role}
                                 </div>
-                            </article>
-                        ))}
-                        {teamMembers.map((member, idx) => (
-                            <article className="plm-team-card" key={`team-2-${idx}`}>
-                                <div className="plm-team-image-wrap">
-                                    <img 
-                                        src={member.image} 
-                                        alt={`${member.name} - ${member.role}`} 
-                                        className="plm-team-image"
-                                        loading="lazy"
-                                    />
-                                    <div className="plm-team-card-overlay"></div>
-                                </div>
-
-                                <div className="plm-team-card-content">
-                                    <h3 className="plm-team-name">{member.name}</h3>
-                                    <div className="plm-team-pill">
-                                        {member.role}
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-
-                        {/* DUPLICATE SET FOR SEAMLESS 50% LOOP */}
-                        {teamMembers.map((member, idx) => (
-                            <article className="plm-team-card" key={`team-dup-1-${idx}`}>
-                                <div className="plm-team-image-wrap">
-                                    <img 
-                                        src={member.image} 
-                                        alt={`${member.name} - ${member.role}`} 
-                                        className="plm-team-image"
-                                        loading="lazy"
-                                    />
-                                    <div className="plm-team-card-overlay"></div>
-                                </div>
-
-                                <div className="plm-team-card-content">
-                                    <h3 className="plm-team-name">{member.name}</h3>
-                                    <div className="plm-team-pill">
-                                        {member.role}
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                        {teamMembers.map((member, idx) => (
-                            <article className="plm-team-card" key={`team-dup-2-${idx}`}>
-                                <div className="plm-team-image-wrap">
-                                    <img 
-                                        src={member.image} 
-                                        alt={`${member.name} - ${member.role}`} 
-                                        className="plm-team-image"
-                                        loading="lazy"
-                                    />
-                                    <div className="plm-team-card-overlay"></div>
-                                </div>
-
-                                <div className="plm-team-card-content">
-                                    <h3 className="plm-team-name">{member.name}</h3>
-                                    <div className="plm-team-pill">
-                                        {member.role}
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
+                            </div>
+                        </article>
+                    ))}
                 </div>
 
             </div>
