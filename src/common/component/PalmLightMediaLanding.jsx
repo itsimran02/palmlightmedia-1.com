@@ -14,6 +14,94 @@ export default function PalmLightMediaLanding() {
     message: ""
   });
 
+  const [teamSlide, setTeamSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(3);
+  const [isTeamHovered, setIsTeamHovered] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
+
+  const teamMembers = [
+    {
+      name: "Shahnwaz Khan",
+      role: "Founder & Operation Manager",
+      image: "/founder-new.jpeg"
+    },
+    {
+      name: "Imran Sheikh",
+      role: "Full Stack Developer",
+      image: "/imran.jpeg"
+    },
+    {
+      name: "Rashmi Gupta",
+      role: "Shopify Developer & Social Media Manager",
+      image: "/gupta.jpeg"
+    },
+    {
+      name: "Shigraf Salik",
+      role: "Web & Mobile App Developer",
+      image: "/Shigraf Salik.jpeg"
+    }
+  ];
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window === "undefined") return;
+      if (window.innerWidth < 640) {
+        setSlidesToShow(1);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const maxTeamSlide = Math.max(0, teamMembers.length - slidesToShow);
+
+  useEffect(() => {
+    if (teamSlide > maxTeamSlide) {
+      setTeamSlide(maxTeamSlide);
+    }
+  }, [slidesToShow, maxTeamSlide, teamSlide]);
+
+  useEffect(() => {
+    if (isTeamHovered || maxTeamSlide === 0) return;
+    const interval = setInterval(() => {
+      setTeamSlide((prev) => (prev >= maxTeamSlide ? 0 : prev + 1));
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [isTeamHovered, maxTeamSlide]);
+
+  const nextTeamSlide = () => {
+    setTeamSlide((prev) => (prev >= maxTeamSlide ? 0 : prev + 1));
+  };
+
+  const prevTeamSlide = () => {
+    setTeamSlide((prev) => (prev <= 0 ? maxTeamSlide : prev - 1));
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchEndX(null);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    if (distance > 45) {
+      nextTeamSlide();
+    } else if (distance < -45) {
+      prevTeamSlide();
+    }
+  };
+
   const toggleFaq = (index) => {
     setActiveFaq(prev => prev === index ? -1 : index);
   };
@@ -1128,7 +1216,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Businesses 
+            Businesses &nbsp;
             <br />
             Served
           </span>
@@ -1146,7 +1234,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Digital 
+            Digital &nbsp;
             <br />
             Services
           </span>
@@ -1164,7 +1252,7 @@ export default function PalmLightMediaLanding() {
           </strong>
 
           <span>
-            Goal:
+            Goal:&nbsp;
             <br />
             Your Growth
           </span>
@@ -4792,7 +4880,7 @@ export default function PalmLightMediaLanding() {
 
 
         {/* =========================================================
-             MEET OUR TEAM SECTION
+             MEET OUR TEAM SECTION (INTERACTIVE SLIDER)
         ========================================================= */}
         <section className="plm-team" id="team">
 
@@ -4802,84 +4890,107 @@ export default function PalmLightMediaLanding() {
 
             <div className="plm-team-container">
 
-                {/* HEADER */}
-                <div className="plm-team-header">
-                    <div className="plm-team-badge">
-                        OUR TEAM
+                {/* HEADER & TOP CONTROLS */}
+                <div className="plm-team-header-wrapper">
+                    <div className="plm-team-header">
+                        <div className="plm-team-badge">
+                            OUR TEAM
+                        </div>
+
+                        <h2>
+                            Meet The Minds <span>Behind Palmlight Media.</span>
+                        </h2>
+
+                        <p>
+                            A dedicated team of growth strategists, full-stack developers, mobile engineers, and e-commerce experts driving digital transformation.
+                        </p>
                     </div>
 
-                    <h2>
-                        Meet The Minds <span>Behind Palmlight Media.</span>
-                    </h2>
-
-                    <p>
-                        A dedicated team of growth strategists, full-stack developers, and e-commerce experts driving digital transformation.
-                    </p>
+                    <div className="plm-team-header-actions">
+                        <div className="plm-team-nav-buttons">
+                            <button
+                                type="button"
+                                className="plm-team-nav-btn"
+                                onClick={prevTeamSlide}
+                                aria-label="Previous Team Member"
+                            >
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button
+                                type="button"
+                                className="plm-team-nav-btn"
+                                onClick={nextTeamSlide}
+                                aria-label="Next Team Member"
+                            >
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                {/* TEAM GRID */}
-                <div className="plm-team-grid">
+                {/* SLIDER VIEWPORT & TRACK */}
+                <div 
+                    className="plm-team-slider-viewport"
+                    onMouseEnter={() => setIsTeamHovered(true)}
+                    onMouseLeave={() => setIsTeamHovered(false)}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                >
+                    <div 
+                        className="plm-team-track"
+                        style={{
+                            transform: `translateX(calc(-${teamSlide} * (100% + ${slidesToShow === 1 ? 16 : slidesToShow === 2 ? 24 : 32}px) / ${slidesToShow}))`
+                        }}
+                    >
+                        {teamMembers.map((member, idx) => (
+                            <div className="plm-team-slide" key={idx}>
+                                <div className="plm-team-card">
+                                    <div className="plm-team-image-wrap">
+                                        <img 
+                                            src={member.image} 
+                                            alt={`${member.name} - ${member.role}`} 
+                                            className="plm-team-image"
+                                            loading="lazy"
+                                        />
+                                        <div className="plm-team-card-overlay"></div>
+                                    </div>
 
-                    {/* MEMBER 1 */}
-                    <div className="plm-team-card">
-                        <div className="plm-team-image-wrap">
-                            <img 
-                                src="/founder-new.jpeg" 
-                                alt="Shahnwaz Khan - Founder & Operation Manager" 
-                                className="plm-team-image"
-                                loading="lazy"
-                            />
-                            <div className="plm-team-card-overlay"></div>
-                        </div>
-
-                        <div className="plm-team-card-content">
-                            <h3 className="plm-team-name">Shahnwaz Khan</h3>
-                            <div className="plm-team-pill">
-                                Founder &amp; Operation Manager
+                                    <div className="plm-team-card-content">
+                                        <h3 className="plm-team-name">{member.name}</h3>
+                                        <div className="plm-team-pill">
+                                            {member.role}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* BOTTOM CONTROLS & PAGINATION */}
+                <div className="plm-team-controls-row">
+                    <div className="plm-team-pagination">
+                        {Array.from({ length: maxTeamSlide + 1 }).map((_, dotIdx) => (
+                            <button
+                                key={dotIdx}
+                                type="button"
+                                className={`plm-team-dot ${teamSlide === dotIdx ? "active" : ""}`}
+                                onClick={() => setTeamSlide(dotIdx)}
+                                aria-label={`Go to slide ${dotIdx + 1}`}
+                            />
+                        ))}
                     </div>
 
-                    {/* MEMBER 2 */}
-                    <div className="plm-team-card">
-                        <div className="plm-team-image-wrap">
-                            <img 
-                                src="/imran.jpeg" 
-                                alt="Imran Sheikh - Full Stack Developer" 
-                                className="plm-team-image"
-                                loading="lazy"
-                            />
-                            <div className="plm-team-card-overlay"></div>
-                        </div>
-
-                        <div className="plm-team-card-content">
-                            <h3 className="plm-team-name">Imran Sheikh</h3>
-                            <div className="plm-team-pill">
-                                Full Stack Developer
-                            </div>
-                        </div>
+                    <div className="plm-team-slide-counter">
+                        <span className="current">{String(teamSlide + 1).padStart(2, "0")}</span>
+                        <span className="divider">/</span>
+                        <span className="total">{String(maxTeamSlide + 1).padStart(2, "0")}</span>
                     </div>
-
-                    {/* MEMBER 3 */}
-                    <div className="plm-team-card">
-                        <div className="plm-team-image-wrap">
-                            <img 
-                                src="/gupta.jpeg" 
-                                alt="Rashmi Gupta - Shopify Developer & Social Media Manager" 
-                                className="plm-team-image"
-                                loading="lazy"
-                            />
-                            <div className="plm-team-card-overlay"></div>
-                        </div>
-
-                        <div className="plm-team-card-content">
-                            <h3 className="plm-team-name">Rashmi Gupta</h3>
-                            <div className="plm-team-pill">
-                                Shopify Developer &amp; Social Media Manager
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
